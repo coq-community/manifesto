@@ -60,6 +60,9 @@ The processes and policies of coq-community are very much a work in progress.
 Always feel free to [open a meta-issue][meta] or a pull request to propose
 some improvements, discuss some policies, etc.
 
+Opening a pull request on this meta-project implies that you accept to put
+your contribution under the CC0 license: see [`LICENSE.md`](LICENSE.md).
+
 [move_project]: https://github.com/coq-community/manifesto/issues/new?template=move_project.md
 [change_maintainer]: https://github.com/coq-community/manifesto/issues/new?template=change_maintainer.md
 [meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
