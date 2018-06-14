@@ -37,9 +37,9 @@ are not raising sufficient interest. These changes must, nonetheless, always be
 done with consideration for compatibility as soon as the package is a library
 or plugin that has users.
 
-### Collaborative writing of documentation ###
+*The following two objectives will be addressed as part of a second phase of the coq-community effort.*
 
-*This objective will be addressed as part of a second phase of the coq-community effort.*
+### Collaborative writing of documentation ###
 
 Some Coq proofs present a particular pedagogical interest because their
 statements are easy to understand, but they require some non-trivial
@@ -51,8 +51,6 @@ interactive “book” that would target advanced Coq learners.
 
 ### Advertising interesting packages ###
 
-*This objective will be addressed as part of a third phase of the coq-community effort.*
-
 Not all the packages that will be taken over will be of the same initial
 quality. While this should not stop packages from being taken over, and new
 maintainers should strive to improve the package quality, some editorial work
@@ -63,4 +61,5 @@ proof techniques, or because they represent an important achievement.
 This work will be done by an editorial board which will be constitued of
 experimented users and prominent members of the Coq community. They will have
 to decide what packages to put forward and on what criteria to take these
-decisions.
+decisions. The editorial board will also oversee the collaborative writing of
+documentation.
