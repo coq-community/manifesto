@@ -26,18 +26,18 @@ move a project to coq-community:
 
 ## Contributing to a coq-community package ##
 
-Report bugs on the specific project's issue tracker. Include as many details
-as possible (version of the package and how you installed it, version of Coq,
-version of OCaml if you built the package yourself...).
+- Report bugs on the specific project's issue tracker. Include as many details
+  as possible (version of the package and how you installed it, version of Coq,
+  version of OCaml if you built the package yourself...).
 
-Propose changes by submitting a pull request. This implies that you accept to
-put your contribution under the project's license. If the change is a large
-one, consider opening an issue first to get an idea whether your change is
-likely to be accepted.
+- Propose changes by submitting a pull request. This implies that you accept to
+  put your contribution under the project's license. If the change is a large
+  one, consider opening an issue first to get an idea whether your change is
+  likely to be accepted.
 
-If you are working on a bug fix, report the bug first and self-assign the issue
-(you need to be part of the coq-community organization to self-assign an issue,
-if you are not you may still post a comment saying you are working on this).
+  If you are working on a bug fix, report the bug first and self-assign the issue
+  (you need to be part of the coq-community organization to self-assign an issue,
+  if you are not you may still post a comment saying you are working on this).
 
 ## Maintaining a coq-community package ##
 

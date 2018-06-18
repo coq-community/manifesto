@@ -3,7 +3,7 @@
 A project for a collaborative, community-driven effort for the long-term
 maintenance and advertisement of Coq packages.
 
-*Note this README (the manifesto) is a work in progress and is meant to be
+*Note that this README (the manifesto) is a work in progress and is meant to be
 collaboratively improved. Please contribute!*
 
 ## Who runs this organization? ##
