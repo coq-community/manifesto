@@ -63,3 +63,57 @@ experimented users and prominent members of the Coq community. They will have
 to decide what packages to put forward and on what criteria to take these
 decisions. The editorial board will also oversee the collaborative writing of
 documentation.
+
+## FAQ ##
+
+- **What is the difference with coq-contribs?**
+
+- **What is the relation with the Coq package index?**
+
+- **Can I propose a project of which I am the author?**
+
+  Yes, you can propose a project of which you are the author, as a way of
+  preparing to pass on the maintenance to other community members. You can
+  start up by proposing yourself as the primary maintainer for this project
+  but if you become less available for this task, we'll be able to pass on this
+  role to someone else.
+
+- **Will all the projects of coq-community have some Continous Integration (CI) setup?**
+
+  Yes, CI plays a big role in keeping code projects more stable over time. In
+  the case of a Coq package, it helps to ensure that the project stays
+  compatible with the various versions of Coq that are claimed to be supported
+  (as well as various versions of OCaml in the case of a Coq plugin).
+
+- **Which versions of Coq must be supported by projects of coq-community?**
+
+  At least the last stable version of Coq must be supported at any given time.
+  Support for older versions or the development version of Coq can be decided
+  project by project. Note that supporting the development version of Coq is
+  a requirement to get into Coq's CI, which can be interesting to get patches
+  from Coq developers when they introduce a breaking change.
+
+- **How to remove a package?**
+
+  When a package loses its interest because a newer, better alternative has
+  been found, or for some other reason, the package can be marked as deprecated
+  and stop being maintained. We will generally archive the repository rather
+  than removing completely though.
+
+- **What to do in case of conflicts?**
+
+  We will have a governance process to make sure that we can handle conflicts
+  that are bound to arise about the management of specific projects. Please
+  contribute to [meta-issue #2](https://github.com/coq-community/manifesto/issues/2)
+  which is about this.
+
+- **Why wait for a second phase of the project for the second and the third objectives?**
+
+- **Why this name?**
+
+  The coq-community organization takes its inspiration from the similar-named
+  [elm-community](https://github.com/elm-community).
+
+Is anything still unclear? Please [open an issue][meta] to ask a question.
+
+[meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
