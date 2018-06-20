@@ -58,7 +58,7 @@ will be also required to put forward the most interesting packages, be it for
 their usefulness as a library or plugin, because they demonstrate interesting
 proof techniques, or because they represent an important achievement.
 
-This work will be done by an editorial board which will be constitued of
+This work will be done by an editorial board which will be constituted of
 experimented users and prominent members of the Coq community. They will have
 to decide what packages to put forward and on what criteria to take these
 decisions. The editorial board will also oversee the collaborative writing of

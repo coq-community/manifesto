@@ -22,7 +22,7 @@ move a project to coq-community:
   [coq-contribs](https://github.com/coq-contribs) do not require this step.
 - We must find a volunteer to become the official maintainer. When
   packages are proposed without a volunteer maintainer, the corresponding
-  issue will be labelled as looking for a maintainer until it finds one.
+  issue will be labeled as looking for a maintainer until it finds one.
 
 ## Contributing to a coq-community package ##
 
