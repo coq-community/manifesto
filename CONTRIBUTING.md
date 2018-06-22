@@ -18,8 +18,7 @@ move a project to coq-community:
   completely unresponsive. Therefore, once a project is proposed, we will
   open an issue at the original project URL (or send an e-mail when this
   option is not available) to try to get consent or at least confirm the
-  unresponsiveness. Projects that are currently part of
-  [coq-contribs](https://github.com/coq-contribs) do not require this step.
+  unresponsiveness.
 - We must find a volunteer to become the official maintainer. When
   packages are proposed without a volunteer maintainer, the corresponding
   issue will be labeled as looking for a maintainer until it finds one.

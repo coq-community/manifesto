@@ -68,13 +68,40 @@ documentation.
 
 - **What is the difference with coq-contribs?**
 
+  Coq's contribs started out as a distribution method: the Coq development team
+  encouraged people to submit their projects as a contrib, then all such
+  contribs would be distributed to all users, as a big archive.
+  It had two nice side-effects: the Coq development team would maintain
+  these contribs to ensure that they kept compiling with the most recent
+  versions of Coq; moreover doing this maintenance work would give them an idea
+  of the impact of their compatibility breaking changes to Coq.
+
+  Then, under the impulse of Thomas Braibant, Coq started using OPAM, the OCaml
+  package manager, to deliver coq-contribs to users.
+  This allowed for a distributed maintenance model where developers of Coq
+  packages could maintain their packages on their own, while continuing to
+  reach users easily.
+
+  Since then, [Continuous Integration has been put in place in the Coq repository][Coq-CI],
+  and it does not depend on contribs anymore, while giving a better assessment
+  of the impact of compatibility breaking changes.
+
+  The webform to submit new contribs was eventually taken down, and only the
+  long-term maintenance of contribs by the Coq development team has not found
+  any replacement mechanism. This is this role that coq-community intends to
+  take. That's why contribs are good candidates to join coq-community.
+
 - **What is the relation with the Coq package index?**
+
+  The [Coq package index](https://coq.inria.fr/packages) is the present
+  OPAM-based way of distributing Coq packages. As such, all projects of
+  coq-community will have a corresponding package in the Coq package index.
 
 - **Can I propose a project of which I am the author?**
 
   Yes, you can propose a project of which you are the author, as a way of
   preparing to pass on the maintenance to other community members. You can
-  start up by proposing yourself as the primary maintainer for this project
+  start up by proposing yourself as the primary maintainer for this project;
   but if you become less available for this task, we'll be able to pass on this
   role to someone else.
 
@@ -109,6 +136,16 @@ documentation.
 
 - **Why wait for a second phase of the project for the second and the third objectives?**
 
+  We want to attract experimented users and prominent members of the Coq
+  community to form the editorial board. Because these people are usually very
+  busy, being able to show them that the organization is already active will
+  help convince them to join the board. If you are already interested in
+  joining this board, please let us know at theo@irif.fr and
+  pierre.casteran@labri.fr.
+
+  Furthermore, we will propose a format for the documentation packages based
+  on a preliminary work by Pierre Castéran.
+
 - **Why this name?**
 
   The coq-community organization takes its inspiration from the similar-named
@@ -117,3 +154,5 @@ documentation.
 Is anything still unclear? Please [open an issue][meta] to ask a question.
 
 [meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
+
+[Coq-CI]: https://github.com/coq/coq/blob/master/dev/ci/README.md
