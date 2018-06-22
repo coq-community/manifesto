@@ -8,7 +8,8 @@ collaboratively improved. Please contribute!*
 
 ## Who runs this organization? ##
 
-This organization is run by volunteer Coq users. Everyone is welcome.
+This organization is run by volunteer Coq users. Everyone is welcome
+(you don't need to a very experimented Coq user to participate).
 Please [get involved](CONTRIBUTING.md)!
 
 ## What are its goals? ##
@@ -17,7 +18,7 @@ Please [get involved](CONTRIBUTING.md)!
 
 *This is the main objective in the first phase of the coq-community effort.*
 
-Abandoned packages that are raising enough interest (either because they are
+Unmaintained packages that are raising enough interest (either because they are
 libraries or plugins with many users, or because they represent interesting
 mathematical proofs or nice achievements) can be taken over by coq-community.
 
@@ -77,7 +78,7 @@ documentation.
   of the impact of their compatibility breaking changes to Coq.
 
   Then, under the impulse of Thomas Braibant, Coq started using OPAM, the OCaml
-  package manager, to deliver coq-contribs to users.
+  package manager, to deliver contribs to users.
   This allowed for a distributed maintenance model where developers of Coq
   packages could maintain their packages on their own, while continuing to
   reach users easily.
@@ -117,15 +118,15 @@ documentation.
   At least the last stable version of Coq must be supported at any given time.
   Support for older versions or the development version of Coq can be decided
   project by project. Note that supporting the development version of Coq is
-  a requirement to get into Coq's CI, which can be interesting to get patches
-  from Coq developers when they introduce a breaking change.
+  a requirement to get into [Coq's CI][Coq-CI], which can be interesting to get
+  patches from Coq developers when they introduce a breaking change.
 
 - **How to remove a package?**
 
   When a package loses its interest because a newer, better alternative has
   been found, or for some other reason, the package can be marked as deprecated
-  and stop being maintained. We will generally archive the repository rather
-  than removing completely though.
+  and stop being maintained. We will generally [archive][archive] the
+  repository rather than removing it completely though.
 
 - **What to do in case of conflicts?**
 
@@ -153,6 +154,8 @@ documentation.
 
 Is anything still unclear? Please [open an issue][meta] to ask a question.
 
-[meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
+[archive]: https://github.com/coq-community?utf8=%E2%9C%93&q=&type=archived
 
 [Coq-CI]: https://github.com/coq/coq/blob/master/dev/ci/README.md
+
+[meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
