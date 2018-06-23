@@ -1,3 +1,5 @@
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)][gitter]
+
 # coq-community #
 
 A project for a collaborative, community-driven effort for the long-term
@@ -152,10 +154,13 @@ documentation.
   The coq-community organization takes its inspiration from the similar-named
   [elm-community](https://github.com/elm-community).
 
-Is anything still unclear? Please [open an issue][meta] to ask a question.
+Is anything still unclear? Please [open an issue][meta] or
+[go to our Gitter room][gitter] to ask a question.
 
 [archive]: https://github.com/coq-community?utf8=%E2%9C%93&q=&type=archived
 
 [Coq-CI]: https://github.com/coq/coq/blob/master/dev/ci/README.md
+
+[gitter]: https://gitter.im/coq-community/Lobby
 
 [meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
