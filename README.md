@@ -11,7 +11,7 @@ collaboratively improved. Please contribute!*
 ## Who runs this organization? ##
 
 This organization is run by volunteer Coq users. Everyone is welcome
-(you don't need to a very experimented Coq user to participate).
+(you don't need to be a very experimented Coq user to participate).
 Please [get involved](CONTRIBUTING.md)!
 
 ## What are its goals? ##
@@ -71,8 +71,8 @@ documentation.
 
 - **What is the difference with coq-contribs?**
 
-  Coq's contribs started out as a distribution method: the Coq development team
-  encouraged people to submit their projects as a contrib, then all such
+  Coq's *contribs* started out as a distribution method: the Coq development
+  team encouraged people to submit their projects as a contrib, then all such
   contribs would be distributed to all users, as a big archive.
   It had two nice side-effects: the Coq development team would maintain
   these contribs to ensure that they kept compiling with the most recent
