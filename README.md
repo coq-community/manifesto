@@ -100,6 +100,14 @@ documentation.
   OPAM-based way of distributing Coq packages. As such, all projects of
   coq-community will have a corresponding package in the Coq package index.
 
+- **What is the difference with the Coq plugin developer program?**
+
+  The Coq plugin developer program doesn't exist yet but it's a project to have
+  a community of Coq plugin developers to discuss best practices, how to
+  correctly use the Coq API, etc. Whenever this program is finally introduced,
+  it will make sense for coq-community plugins to also be part of this
+  program.
+
 - **Can I propose a project of which I am the author?**
 
   Yes, you can propose a project of which you are the author, as a way of
