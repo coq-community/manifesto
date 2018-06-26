@@ -1,4 +1,5 @@
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)][gitter]
+[![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](CODE_OF_CONDUCT.md)
 
 # coq-community #
 
