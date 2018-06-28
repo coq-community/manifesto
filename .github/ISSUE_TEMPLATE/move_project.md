@@ -7,6 +7,8 @@ about: When you want to propose a new project for inclusion in coq-community.
 
 **Project name:**
 
+**Initial author(s):**
+
 **Current URL:**
 
 **Kind:** pure Coq library / OCaml plugin / extractable program / formalization of a mathematical theorem / ...
@@ -15,8 +17,6 @@ about: When you want to propose a new project for inclusion in coq-community.
 
 **Description:**
 
-**Status:**
-
-**Previous maintainer:**
+**Status:** <!-- is it maintained or not? if not, since when? -->
 
 **New maintainer:** looking for a volunteer <!-- update if you are a volunteer / know a volunteer -->
