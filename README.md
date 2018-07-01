@@ -80,20 +80,18 @@ documentation.
   versions of Coq; moreover doing this maintenance work would give them an idea
   of the impact of their compatibility breaking changes to Coq.
 
-  Then, under the impulse of Thomas Braibant, Coq started using OPAM, the OCaml
-  package manager, to deliver contribs to users.
-  This allowed for a distributed maintenance model where developers of Coq
-  packages could maintain their packages on their own, while continuing to
-  reach users easily.
+  Nowadays, Coq uses OPAM for distributing packages;
+  [Continuous Integration][Coq-CI] (CI) has been put in place in the Coq
+  repository and it does not depend on contribs anymore;
+  and the webform to submit new contribs has been taken down.
 
-  Since then, [Continuous Integration has been put in place in the Coq repository][Coq-CI],
-  and it does not depend on contribs anymore, while giving a better assessment
-  of the impact of compatibility breaking changes.
+  coq-community is a proposed replacement for the long-term maintenance of
+  Coq packages. Whereas contribs were maintained by the Coq development team,
+  coq-community will be managed by the user community.
+  coq-community projects will use standard, modern distribution methods
+  (including OPAM) and can apply to join Coq CI when deemed useful.
 
-  The webform to submit new contribs was eventually taken down, and only the
-  long-term maintenance of contribs by the Coq development team has not found
-  any replacement mechanism. This is this role that coq-community intends to
-  take. That's why contribs are good candidates to join coq-community.
+  Legacy contribs are good candidates to join coq-community.
 
 - **What is the relation with the Coq package index?**
 
