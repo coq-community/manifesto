@@ -12,7 +12,7 @@ collaboratively improved. Please contribute!*
 ## Who runs this organization? ##
 
 This organization is run by volunteer Coq users. Everyone is welcome
-(you don't need to be a very experimented Coq user to participate).
+(you don't need to be a very experienced Coq user to participate).
 Please [get involved](CONTRIBUTING.md)!
 
 ## What are its goals? ##
