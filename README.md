@@ -1,7 +1,7 @@
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)][gitter]
 [![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](CODE_OF_CONDUCT.md)
 
-# coq-community #
+# [![coq-community](logo.svg)](https://github.com/coq-community) #
 
 A project for a collaborative, community-driven effort for the long-term
 maintenance and advertisement of Coq packages.
@@ -161,6 +161,12 @@ documentation.
   The coq-community organization takes its inspiration from the similar-named
   [elm-community](https://github.com/elm-community).
 
+- **Who made this awesome logo?**
+
+  This logo was designed by Aras from the [openlogos project][openlogos] and
+  was attributed to coq-community following a general mobilization of Coq users.
+  Thanks to Aras and to the 94 people who voted for us to get this logo!
+
 Is anything still unclear? Please [open an issue][meta] or
 [go to our Gitter room][gitter] to ask a question.
 
@@ -171,3 +177,5 @@ Is anything still unclear? Please [open an issue][meta] or
 [gitter]: https://gitter.im/coq-community/Lobby
 
 [meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
+
+[openlogos]: https://github.com/arasatasaygin/openlogos
