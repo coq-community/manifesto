@@ -38,6 +38,9 @@ move a project to coq-community:
   (you need to be part of the coq-community organization to self-assign an issue,
   if you are not you may still post a comment saying you are working on this).
 
+  If you have time on your hands but don't know what to work on, have a look
+  at [this list of coq-community issues where external help was requested][help-wanted].
+
 ## Maintaining a coq-community package ##
 
 As a maintainer, your main role is to handle incoming pull requests (review and
@@ -65,3 +68,5 @@ your contribution under the CC0 license: see [`LICENSE.md`](LICENSE.md).
 [move_project]: https://github.com/coq-community/manifesto/issues/new?template=move_project.md
 [change_maintainer]: https://github.com/coq-community/manifesto/issues/new?template=change_maintainer.md
 [meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
+
+[help-wanted]: https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3Acoq-community+label%3A%22help+wanted%22
