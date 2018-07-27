@@ -1,5 +1,6 @@
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)][gitter]
-[![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](CODE_OF_CONDUCT.md)
+[![Contributing](https://img.shields.io/badge/contributions-welcome-%23f7931e.svg)](https://github.com/coq-community/manifesto/blob/master/CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-%23f15a24.svg)](https://github.com/coq-community/manifesto/blob/master/CODE_OF_CONDUCT.md)
+[![Gitter](https://img.shields.io/badge/chat-on%20gitter-%23c1272d.svg)](https://gitter.im/coq-community/Lobby)
 
 # [![coq-community](logo.svg)](https://github.com/coq-community) #
 
