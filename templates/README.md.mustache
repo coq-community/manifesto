@@ -1,12 +1,12 @@
-# Overloaded lemmas
+# {{ project_name }}
 
 [![Travis][travis-shield]][travis-link]
 [![Contributing][contributing-shield]][contributing-link]
 [![Code of Conduct][conduct-shield]][conduct-link]
 [![Gitter][gitter-shield]][gitter-link]
 
-[travis-shield]: https://travis-ci.com/coq-community/PROJECT_NAME.svg?branch=master
-[travis-link]: https://travis-ci.com/coq-community/PROJECT_NAME/builds
+[travis-shield]: https://travis-ci.com/coq-community/{{ no_space_project_name }}.svg?branch=master
+[travis-link]: https://travis-ci.com/coq-community/{{ no_space_project_name }}/builds
 
 [contributing-shield]: https://img.shields.io/badge/contributions-welcome-%23f7931e.svg
 [contributing-link]: https://github.com/coq-community/manifesto/blob/master/CONTRIBUTING.md
@@ -17,32 +17,22 @@
 [gitter-shield]: https://img.shields.io/badge/chat-on%20gitter-%23c1272d.svg
 [gitter-link]: https://gitter.im/coq-community/Lobby
 
-PROJECT_DESCRIPTION
+{{ project_description }}
 
-## Initial author(s)
+## Meta
 
-NAME(S)
-
-## Current maintainer
-
-NAME (@NICKNAME)
-
-## License
-
-LICENSE
-
-## Dependencies
-
-The following requirements should be met in order to compile the project:
-- Coq VERSIONS
-- OTHER_DEPENDENCIES
+- Initial author(s): {{ initial_authors }}
+- Coq-community maintainer(s): {{ maintainers_names_and_nicknames }}
+- License: [{{ license_name }}]({{ license_file }})
+- Compatible Coq versions: {{ coq_versions }}
+- {{# dependencies }}Additional dependencies: {{ dependencies }}{{/ dependencies }}
 
 ## Building instructions
 
-```shell
-git clone https://github.com/coq-community/PROJECT_NAME
-cd PROJECT_NAME
+``` shell
+git clone https://github.com/coq-community/{{ no_space_project_name }}
+cd {{ no_space_project_name }}
 make   # or make -j <number-of-cores-on-your-machine>
 ```
 
-MORE_CONTENT
+{{! Optional additional sections }}
