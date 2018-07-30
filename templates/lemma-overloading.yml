@@ -1,0 +1,18 @@
+---
+project_name: "Overloaded lemmas"
+no_space_project_name: "lemma-overloading"
+project_description: "This project contains Hoare Type Theory libraries from
+[How to make ad hoc proof automation less ad hoc](https://software.imdea.org/~aleks/papers/lessadhoc/journal.pdf) paper.
+\n\n
+The project presents a series of design patterns for *canonical structure* programming that
+enable one to carefully and predictably coax Coq’s type inference engine into triggering
+the execution of user-supplied algorithms during unification, and illustrates these patterns
+through several realistic examples drawn from Hoare Type Theory.
+The project also contains a typeclasses-based re-implementation for comparison."
+initial_authors: "Georges Gonthier, Beta Ziliani, Aleksandar Nanevski, and Derek Dreyer."
+maintainers_names_and_nicknames: "Anton Trunov (**@anton-trunov**)"
+license_name: "GNU General Public License v3"
+license_file: "LICENSE.md"
+coq_versions: "Coq 8.8 or greater"
+dependencies: "Mathcomp 1.6.2 or greater (mathcomp/ssreflect package suffices)"
+---
