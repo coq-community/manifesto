@@ -18,31 +18,35 @@ Please [get involved](CONTRIBUTING.md)!
 
 ## What are its goals? ##
 
-### Providing a place to maintain packages that were left over by their author ###
+### Collaborative maintenance of Coq packages and tools ###
 
-*This is the main objective in the first phase of the coq-community effort.*
+Projects can be hosted in coq-community in one of the following case:
 
-Unmaintained packages that are raising enough interest (either because they are
-libraries or plugins with many users, or because they represent interesting
-mathematical proofs or nice achievements) can be taken over by coq-community.
+- the initial author has stopped maintaining the project and someone else is
+  volunteering to do so;
+- the project has become a collective work (several community members are
+  actively working on it);
+- the initial author is still maintaining the project but they want to
+  encourage other community members to participate in the maintenance and
+  possibly take over (and the project is indeed raising interest from the
+  community);
+- the project is a tool of general interest and it makes sense to develop it
+  collaboratively.
 
-Each project under the umbrella of coq-community has an official maintainer
-but the maintenance effort is done collaboratively. Users need not be afraid
-of volunteering to be the official maintainer of a coq-community project
-because they can step down at anytime. Changing the maintainer of a
+Each project under the umbrella of coq-community has one or several official
+maintainer(s) but the maintenance effort is done collaboratively. Users need
+not be afraid of volunteering to be the official maintainer of a coq-community
+project because they can step down at anytime. Changing the maintainer of a
 coq-community project can be done very easily without the hassle of moving its
-location too. That's why it can also make sense for a project which is actively
-maintained but not actively developed to move to coq-community.
+location too.
 
 Maintenance is allowed to go much further than just updating the package to
 keep it compiling with newer Coq versions. It can also include refactorization
 of the code, uniformization of the style, merging with other packages, taking
 pieces out to put them in other libraries, and even removal of some parts that
 are not raising sufficient interest. These changes must, nonetheless, always be
-done with consideration for compatibility as soon as the package is a library
-or plugin that has users.
-
-*The following two objectives will be addressed as part of a second phase of the coq-community effort.*
+done with consideration for compatibility as soon as the package is a library,
+plugin or tool that has users.
 
 ### Collaborative writing of documentation ###
 
@@ -53,6 +57,9 @@ patterns, or demonstrate the use of specific libraries. They could be used as
 the basis for tutorials which explain the tricks and interesting parts.
 Gathering such packages and their documentation could give rise to a new,
 interactive “book” that would target advanced Coq learners.
+
+We will propose a format for the documentation packages based on a preliminary
+work by Pierre Castéran.
 
 ### Advertising interesting packages ###
 
@@ -69,44 +76,31 @@ to decide what packages to put forward and on what criteria to take these
 decisions. The editorial board will also oversee the collaborative writing of
 documentation.
 
+If you are interested in joining this board, please let us know at theo@irif.fr
+and pierre.casteran@labri.fr.
+
 ## FAQ ##
 
 - **What is the difference with coq-contribs?**
 
-  Coq's *contribs* started out as a distribution method: the Coq development
-  team encouraged people to submit their projects as a contrib, then all such
-  contribs would be distributed to all users, as a big archive.
-  It had two nice side-effects: the Coq development team would maintain
-  these contribs to ensure that they kept compiling with the most recent
-  versions of Coq; moreover doing this maintenance work would give them an idea
-  of the impact of their compatibility breaking changes to Coq.
-
-  Nowadays, Coq uses OPAM for distributing packages;
-  [Continuous Integration][Coq-CI] (CI) has been put in place in the Coq
-  repository and it does not depend on contribs anymore;
-  and the webform to submit new contribs has been taken down.
+  Coq's *contribs* represent the legacy distribution, compatibility testing and
+  maintenance model. There used to be a form allowing users to submit a package
+  that the Coq development team would then maintain. While distribution now
+  happens through the Coq package index and compatibility testing using
+  [Coq's CI][Coq-CI], maintenance of legacy contribs is still ensured.
 
   coq-community is a proposed replacement for the long-term maintenance of
   Coq packages. Whereas contribs were maintained by the Coq development team,
-  coq-community will be managed by the user community.
-  coq-community projects will use standard, modern distribution methods
-  (including OPAM) and can apply to join Coq CI when deemed useful.
-
-  Legacy contribs are good candidates to join coq-community.
+  coq-community will be managed by the user community. We encourage users to
+  “adopt” a package (including a legacy contrib) and to push the meaning of
+  “maintenance” further than simply ensuring that the package continues to
+  compile with newer Coq versions.
 
 - **What is the relation with the Coq package index?**
 
   The [Coq package index](https://coq.inria.fr/packages) is the present
-  OPAM-based way of distributing Coq packages. As such, all projects of
-  coq-community will have a corresponding package in the Coq package index.
-
-- **What is the difference with the Coq plugin developer program?**
-
-  The Coq plugin developer program doesn't exist yet but it's a project to have
-  a community of Coq plugin developers to discuss best practices, how to
-  correctly use the Coq API, etc. Whenever this program is finally introduced,
-  it will make sense for coq-community plugins to also be part of this
-  program.
+  opam-based way of distributing Coq packages. As such, all packages of
+  coq-community are meant to be listed in the Coq package index.
 
 - **Can I propose a project of which I am the author?**
 
@@ -116,7 +110,7 @@ documentation.
   but if you become less available for this task, we'll be able to pass on this
   role to someone else.
 
-- **Will all the projects of coq-community have some Continous Integration (CI) setup?**
+- **Do the projects of coq-community need to have some Continous Integration (CI) setup?**
 
   Yes, CI plays a big role in keeping code projects more stable over time. In
   the case of a Coq package, it helps to ensure that the project stays
@@ -129,7 +123,8 @@ documentation.
   Support for older versions or the development version of Coq can be decided
   project by project. Note that supporting the development version of Coq is
   a requirement to get into [Coq's CI][Coq-CI], which can be interesting to get
-  patches from Coq developers when they introduce a breaking change.
+  patches from Coq developers when they introduce a breaking change (this is
+  particularly recommended for plugins).
 
 - **How to remove a package?**
 
@@ -145,22 +140,15 @@ documentation.
   contribute to [meta-issue #2](https://github.com/coq-community/manifesto/issues/2)
   which is about this.
 
-- **Why wait for a second phase of the project for the second and the third objectives?**
-
-  We want to attract experimented users and prominent members of the Coq
-  community to form the editorial board. Because these people are usually very
-  busy, being able to show them that the organization is already active will
-  help convince them to join the board. If you are already interested in
-  joining this board, please let us know at theo@irif.fr and
-  pierre.casteran@labri.fr.
-
-  Furthermore, we will propose a format for the documentation packages based
-  on a preliminary work by Pierre Castéran.
-
 - **Why this name?**
 
   The coq-community organization takes its inspiration from the similar-named
   [elm-community](https://github.com/elm-community).
+  Here are some other sister organizations:
+  - [ocaml-community](https://github.com/ocaml-community/) (officially inspired
+    by elm-community and coq-community)
+  - [nix-community](https://github.com/nix-community/)
+  - [reasonml-community](https://github.com/reasonml-community/)
 
 - **Who made this awesome logo?**
 
