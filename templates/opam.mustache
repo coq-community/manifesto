@@ -1,0 +1,32 @@
+opam-version: "1.2"
+maintainer: "{{ opam-file-maintainer }}"
+
+homepage: "https://github.com/coq-community/{{ shortname }}"
+dev-repo: "https://github.com/coq-community/{{ shortname }}.git"
+bug-reports: "https://github.com/coq-community/{{ shortname }}/issues"
+{{# license }}license: "{{ shortname }}"{{/ license }}
+
+build: [make "-j%{jobs}%"]
+install: [make "install"]
+remove: ["rm" "-R" "%{lib}%/coq/user-contrib/{{ namespace }}"]
+depends: [
+{{# supported_coq_versions }}
+  "coq" {{& opam }}
+{{/ supported_coq_versions }}
+{{# dependencies }}
+  "{{ opam }}"
+{{/ dependencies }}
+]
+
+tags: [
+{{# keywords }}
+  "keyword:{{ name }}"
+{{/ keywords }}
+  "category:{{ category }}"
+  "logpath:{{ namespace }}"
+]
+authors: [
+{{# authors }}
+  "{{ name }}"
+{{/ authors }}
+]
