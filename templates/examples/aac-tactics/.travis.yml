@@ -26,6 +26,7 @@ matrix:
         export PS4='+ \e[33;1m(\$0 @ line \$LINENO) \$\e[0m '
         set -ex  # -e = exit on failure; -x = trace for debug
         opam update -y
+        opam install -y -j ${NJOBS} --deps-only .
         opam config list
         opam repo list
         opam list
