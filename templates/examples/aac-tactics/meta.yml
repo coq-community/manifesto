@@ -1,0 +1,54 @@
+---
+fullname: AAC tactics
+shortname: aac-tactics
+
+description: |
+  This Coq plugin provides tactics for rewriting universally quantified
+  equations, modulo associativity and commutativity of some operator.
+
+  The tactics can be applied for custom operators by registering the
+  operators and their properties as type class instances. Many common
+  operator instances, such as for Z binary arithmetic and booleans, are
+  provided with the plugin.
+
+  The implementation and underlying theory is decribed in the paper
+  [Tactics for Reasoning modulo AC in Coq](https://arxiv.org/abs/1106.4448).
+
+authors:
+- name: Thomas Braibant
+- name: Damien Pous
+
+maintainers:
+- name: Fabian Kunze
+  nickname: fakusb
+- name: Karl Palmskog
+  nickname: palmskog
+
+opam-file-maintainer: palmskog@gmail.com
+
+license:
+  fullname: GNU Lesser General Public License v3
+  shortname: LGPL3
+
+plugin: true
+
+supported_coq_versions:
+  text: Coq master (use the corresponding branch or release for other Coq versions)
+  opam: '{= "dev"}'
+
+tested_coq_versions:
+- version_or_url: https://github.com/coq/coq/tarball/master
+
+tested_coq_opam_version: dev
+
+namespace: AAC_tactics
+
+keywords:
+- name: reflexive tactic
+- name: rewriting
+- name: rewriting modulo associativity and commutativity
+- name: rewriting modulo ac
+- name: decision procedure
+
+category: Miscellaneous/Coq Extensions
+---

@@ -1,0 +1,62 @@
+---
+fullname: Overloaded lemmas
+shortname: lemma-overloading
+
+description: |
+  This project contains Hoare Type Theory libraries from
+  [How to make ad hoc proof automation less ad hoc][paper] paper.
+
+  The project presents a series of design patterns for *canonical structure*
+  programming that enable one to carefully and predictably coax Coq’s type
+  inference engine into triggering the execution of user-supplied algorithms
+  during unification, and illustrates these patterns through several realistic
+  examples drawn from Hoare Type Theory. The project also contains a
+  typeclasses-based re-implementation for comparison.
+
+  [paper]: https://software.imdea.org/~aleks/papers/lessadhoc/journal.pdf
+
+authors:
+- name: Georges Gonthier
+- name: Beta Ziliani
+- name: Aleksandar Nanevski
+- name: Derek Dreyer
+
+maintainers:
+- name: Anton Trunov
+  nickname: anton-trunov
+
+opam-file-maintainer: palmskog@gmail.com
+
+license:
+  fullame: GNU General Public License v3
+  shortname: GPL3
+  file: LICENSE.md
+
+supported_coq_versions:
+  text: Coq 8.8 or greater
+  opam: '{(>= "8.8" & < "8.10~") | (= "dev")}'
+
+tested_coq_versions:
+- version_or_url: https://github.com/coq/coq/tarball/master
+- version_or_url: 8.9
+- version_or_url: 8.8
+
+tested_coq_opam_version: dev
+
+dependencies:
+- opam:
+    name: coq-mathcomp-ssreflect
+    version: '{(>= "1.6.2" & < "1.8~") | (= "dev")}'
+  nix: ssreflect
+  description: Mathcomp 1.6.2 or greater (mathcomp/ssreflect package suffices)
+
+namespace: LemmaOverloading
+
+keywords:
+- name: canonical structures
+- name: proof automation
+- name: hoare type theory
+- name: lemma overloading
+
+category: Computer Science/Data Types and Data Structures
+---
