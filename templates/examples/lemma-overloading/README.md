@@ -39,7 +39,7 @@ typeclasses-based re-implementation for comparison.
   - Derek Dreyer
 - Coq-community maintainer(s):
   - [Anton Trunov](https://github.com/anton-trunov) (**@anton-trunov**)
-- License: [Overloaded lemmas](LICENSE.md)
+- License: [GNU General Public License v3](LICENSE.md)
 - Compatible Coq versions: Coq 8.8 or greater
 - Additional dependencies:
   - Mathcomp 1.6.2 or greater (mathcomp/ssreflect package suffices)
