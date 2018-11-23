@@ -42,7 +42,17 @@
   - {{ description }}
 {{/ dependencies }}{{^ dependencies }} none{{/ dependencies }}
 
-## Building instructions
+## Building and installation instructions
+
+The easiest way to install the latest released version is via
+[OPAM](https://opam.ocaml.org/doc/Install.html):
+
+```shell
+opam repo add coq-released https://coq.inria.fr/opam/released
+opam install coq-{{ shortname }}
+```
+
+To instead build and install manually, do:
 
 ``` shell
 git clone https://github.com/coq-community/{{ shortname }}
@@ -50,5 +60,8 @@ cd {{ shortname }}
 make   # or make -j <number-of-cores-on-your-machine>
 make install
 ```
+
+After installation, the various modules from [`theories/`](theories/) are
+available under the `{{ namespace }}` namespace.
 
 {{! Optional additional sections }}
