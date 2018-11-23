@@ -117,6 +117,12 @@ and pierre.casteran@labri.fr.
   compatible with the various versions of Coq that are claimed to be supported
   (as well as various versions of OCaml in the case of a Coq plugin).
 
+  Two alternative ways of setting up CI are documented in
+  <https://github.com/coq-community/manifesto/wiki/Continuous-Integration-with-Nix>
+  and in <https://github.com/coq-community/docker-coq/wiki/CI-setup>. Feel
+  free to use whichever you prefer (the proposed setup in
+  [`templates/`](templates/) uses a combination of both).
+
 - **Which versions of Coq must be supported by projects of coq-community?**
 
   At least the last stable version of Coq must be supported at any given time.
