@@ -44,7 +44,9 @@ tested_coq_versions:
 tested_coq_opam_version: dev
 
 dependencies:
-- opam: coq-mathcomp-ssreflect
+- opam:
+    name: coq-mathcomp-ssreflect
+    version: '{(>= "1.6.2" & < "1.8~") | (= "dev")}'
   nix: ssreflect
   description: Mathcomp 1.6.2 or greater (mathcomp/ssreflect package suffices)
 

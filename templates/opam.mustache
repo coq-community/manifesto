@@ -14,7 +14,9 @@ depends: [
   "coq" {{& opam }}
 {{/ supported_coq_versions }}
 {{# dependencies }}
-  "{{ opam }}"
+{{# opam }}
+  "{{ name }}" {{& version }}
+{{/ opam }}
 {{/ dependencies }}
 ]
 
