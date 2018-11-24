@@ -35,8 +35,8 @@ The implementation and underlying theory is decribed in the paper
   - Thomas Braibant
   - Damien Pous
 - Coq-community maintainer(s):
-  - [Fabian Kunze](https://github.com/fakusb) (**@fakusb**)
-  - [Karl Palmskog](https://github.com/palmskog) (**@palmskog**)
+  - Fabian Kunze ([**@fakusb**](https://github.com/fakusb))
+  - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
 - License: [GNU Lesser General Public License v3](LICENSE)
 - Compatible Coq versions: Coq master (use the corresponding branch or release for other Coq versions)
 - Compatible OCaml versions: all versions supported by Coq
@@ -61,6 +61,10 @@ make   # or make -j <number-of-cores-on-your-machine>
 make install
 ```
 
-After installation, the various modules from [`theories/`](theories/) are
-available under the `AAC_tactics` namespace.
+After installation, the included modules are available under
+the `AAC_tactics` namespace.
+
+# Documentation
+
+The file `Tutorial.v` provides a succinct introduction and more examples of how to use this plugin.
 
