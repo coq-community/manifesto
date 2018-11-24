@@ -53,7 +53,7 @@ keywords:
 category: Miscellaneous/Coq Extensions
 
 documentation: |
-  # Documentation
+  ## Documentation
 
   The file `Tutorial.v` provides a succinct introduction and more examples of how to use this plugin.
 ---
