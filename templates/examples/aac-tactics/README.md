@@ -64,7 +64,7 @@ make install
 After installation, the included modules are available under
 the `AAC_tactics` namespace.
 
-# Documentation
+## Documentation
 
 The file `Tutorial.v` provides a succinct introduction and more examples of how to use this plugin.
 
