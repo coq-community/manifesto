@@ -38,7 +38,7 @@ typeclasses-based re-implementation for comparison.
   - Aleksandar Nanevski
   - Derek Dreyer
 - Coq-community maintainer(s):
-  - [Anton Trunov](https://github.com/anton-trunov) (**@anton-trunov**)
+  - Anton Trunov ([**@anton-trunov**](https://github.com/anton-trunov))
 - License: [GNU General Public License v3](LICENSE.md)
 - Compatible Coq versions: Coq 8.8 or greater
 - Additional dependencies:
@@ -64,6 +64,7 @@ make   # or make -j <number-of-cores-on-your-machine>
 make install
 ```
 
-After installation, the various modules from [`theories/`](theories/) are
-available under the `LemmaOverloading` namespace.
+After installation, the included modules are available under
+the `LemmaOverloading` namespace.
+
 

@@ -51,4 +51,9 @@ keywords:
 - name: decision procedure
 
 category: Miscellaneous/Coq Extensions
+
+documentation: |
+  # Documentation
+
+  The file `Tutorial.v` provides a succinct introduction and more examples of how to use this plugin.
 ---
