@@ -28,7 +28,7 @@ maintainers:
 opam-file-maintainer: palmskog@gmail.com
 
 license:
-  fullame: GNU General Public License v3
+  fullname: GNU General Public License v3
   shortname: GPL3
   file: LICENSE.md
 
