@@ -21,7 +21,7 @@ This project contains Hoare Type Theory libraries from
 [How to make ad hoc proof automation less ad hoc][paper] paper.
 
 The project presents a series of design patterns for *canonical structure*
-programming that enable one to carefully and predictably coax Coq's type"
+programming that enable one to carefully and predictably coax Coq's type
 inference engine into triggering the execution of user-supplied algorithms
 during unification, and illustrates these patterns through several realistic
 examples drawn from Hoare Type Theory. The project also contains a
