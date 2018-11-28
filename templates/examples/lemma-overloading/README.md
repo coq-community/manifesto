@@ -34,11 +34,11 @@ re-implementations for comparison.
 
 ## Meta
 
-- Initial author(s):
-  - Georges Gonthier
-  - Beta Ziliani
-  - Aleksandar Nanevski
-  - Derek Dreyer
+- Author(s):
+  - Georges Gonthier (initial)
+  - Beta Ziliani (initial)
+  - Aleksandar Nanevski (initial)
+  - Derek Dreyer (initial)
 - Coq-community maintainer(s):
   - Anton Trunov ([**@anton-trunov**](https://github.com/anton-trunov))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))

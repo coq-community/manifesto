@@ -31,9 +31,10 @@ The implementation and underlying theory is decribed in the paper
 
 ## Meta
 
-- Initial author(s):
-  - Thomas Braibant
-  - Damien Pous
+- Author(s):
+  - Thomas Braibant (initial)
+  - Damien Pous (initial)
+  - Fabian Kunze
 - Coq-community maintainer(s):
   - Fabian Kunze ([**@fakusb**](https://github.com/fakusb))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))

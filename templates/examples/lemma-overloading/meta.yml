@@ -19,9 +19,13 @@ description: |
 
 authors:
 - name: Georges Gonthier
+  initial: true
 - name: Beta Ziliani
+  initial: true
 - name: Aleksandar Nanevski
+  initial: true
 - name: Derek Dreyer
+  initial: true
 
 maintainers:
 - name: Anton Trunov

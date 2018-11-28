@@ -16,7 +16,11 @@ description: |
 
 authors:
 - name: Thomas Braibant
+  initial: true
 - name: Damien Pous
+  initial: true
+- name: Fabian Kunze
+  initial: false
 
 maintainers:
 - name: Fabian Kunze
