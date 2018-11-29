@@ -67,8 +67,6 @@ the `AAC_tactics` namespace.
 
 ## Documentation
 
-After installation, definitions and tactics can be found under the `AAC_tactics` namespace.
-
 The following example shows an application of the tactics for reasoning over Z binary numbers:
 ```coq
 Require Import AAC_tactics.AAC.
