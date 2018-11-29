@@ -20,6 +20,7 @@ tags: [
   "keyword:rewriting modulo ac"
   "keyword:decision procedure"
   "category:Miscellaneous/Coq Extensions"
+  "category:Computer Science/Decision Procedures and Certified Algorithms/Decision procedures"
   "logpath:AAC_tactics"
 ]
 authors: [

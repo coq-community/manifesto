@@ -67,5 +67,50 @@ the `AAC_tactics` namespace.
 
 ## Documentation
 
-The file `Tutorial.v` provides a succinct introduction and more examples of how to use this plugin.
+After installation, definitions and tactics can be found under the `AAC_tactics` namespace.
+
+The following example shows an application of the tactics for reasoning over Z binary numbers:
+```coq
+Require Import AAC_tactics.AAC.
+Require AAC_tactics.Instances.
+Require Import ZArith.
+
+Section ZOpp.
+  Import Instances.Z.
+  Variables a b c : Z.
+  Hypothesis H: forall x, x + Z.opp x = 0.
+
+  Goal a + b + c + Z.opp (c + a) = b.
+    aac_rewrite H.
+    aac_reflexivity.
+  Qed.
+End ZOpp.
+```
+
+The file [Tutorial.v](theories/Tutorial.v) provides a succinct introduction
+and more examples of how to use this plugin.
+
+The file [Instances.v](theories/Instances.v) defines several type class instances
+for frequent use-cases of this plugin, that should allow you to use it off-the-shelf.
+Namely, it contains instances for:
+
+- Peano naturals	(`Import Instances.Peano.`)
+- Z binary numbers	(`Import Instances.Z.`)
+- N binary numbers	(`Import Instances.N.`)
+- P binary numbers	(`Import Instances.P.`)
+- Rational numbers	(`Import Instances.Q.`)
+- Prop			(`Import Instances.Prop_ops.`)
+- Booleans		(`Import Instances.Bool.`)
+- Relations		(`Import Instances.Relations.`)
+- all of the above	(`Import Instances.All.`)
+
+To understand the inner workings of the tactics, please refer to
+the `.mli` files as the main source of information on each `.ml` file.
+
+## Acknowledgements
+
+The initial authors are grateful to Evelyne Contejean, Hugo Herbelin,
+Assia Mahboubi, and Matthieu Sozeau for highly instructive discussions.
+The plugin took inspiration from the plugin tutorial "constructors" by
+Matthieu Sozeau, distributed under the LGPL 2.1.
 

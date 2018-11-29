@@ -24,7 +24,9 @@ tags: [
 {{# keywords }}
   "keyword:{{ name }}"
 {{/ keywords }}
-  "category:{{ category }}"
+{{# categories }}
+  "category:{{ name }}"
+{{/ categories }}
   "logpath:{{ namespace }}"
 ]
 authors: [
