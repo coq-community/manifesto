@@ -66,7 +66,8 @@ keywords:
 - name: hoare type theory
 - name: lemma overloading
 
-category: Computer Science/Data Types and Data Structures
+categories:
+- name: Computer Science/Data Types and Data Structures
 
 documentation: |
   ## Files described in the paper
