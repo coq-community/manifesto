@@ -18,3 +18,5 @@ for dir in examples/*; do
   done
 done
 ```
+You may find documentation, advice and guidelines on how to maintain a project
+in the [wiki](https://github.com/coq-community/manifesto/wiki).
