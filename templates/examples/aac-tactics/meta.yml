@@ -32,7 +32,7 @@ opam-file-maintainer: palmskog@gmail.com
 
 license:
   fullname: GNU Lesser General Public License v3
-  shortname: LGPL3
+  shortname: LGPL 3
 
 plugin: true
 

@@ -43,9 +43,10 @@ re-implementations for comparison.
   - Anton Trunov ([**@anton-trunov**](https://github.com/anton-trunov))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
 - License: [GNU General Public License v3](LICENSE.md)
-- Compatible Coq versions: Coq 8.8 or greater
+- Compatible Coq versions: Coq 8.8 or greater (use releases for other Coq versions)
 - Additional dependencies:
-  - MathComp 1.7.0 or greater (`ssreflect` suffices)
+  - [MathComp](https://math-comp.github.io/math-comp/) 1.7.0 or greater (`ssreflect` suffices)
+
 
 
 ## Building and installation instructions
@@ -125,7 +126,7 @@ These files contains the same automated lemmas as in the files `indom`, `cancel`
 
 ## Note
 
-The files not mentioned in this README file are part of the HTT library,
+The files not mentioned here are part of the HTT library,
 from [Structuring the Verification of Heap-Manipulating Programs][reflect]
 by A. Nanevski et al., POPL'10.
 

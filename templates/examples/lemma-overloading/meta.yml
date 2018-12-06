@@ -37,11 +37,11 @@ opam-file-maintainer: palmskog@gmail.com
 
 license:
   fullname: GNU General Public License v3
-  shortname: GPL3
+  shortname: GPL 3
   file: LICENSE.md
 
 supported_coq_versions:
-  text: Coq 8.8 or greater
+  text: Coq 8.8 or greater (use releases for other Coq versions)
   opam: '{(>= "8.8" & < "8.10~") | (= "dev")}'
 
 tested_coq_versions:
@@ -56,7 +56,8 @@ dependencies:
     name: coq-mathcomp-ssreflect
     version: '{(>= "1.7.0" & < "1.8~") | (= "dev")}'
   nix: ssreflect
-  description: MathComp 1.7.0 or greater (`ssreflect` suffices)
+  description: |
+    [MathComp](https://math-comp.github.io/math-comp/) 1.7.0 or greater (`ssreflect` suffices)
 
 namespace: LemmaOverloading
 
@@ -125,7 +126,7 @@ documentation: |
   
   ## Note
   
-  The files not mentioned in this README file are part of the HTT library,
+  The files not mentioned here are part of the HTT library,
   from [Structuring the Verification of Heap-Manipulating Programs][reflect]
   by A. Nanevski et al., POPL'10.
 
