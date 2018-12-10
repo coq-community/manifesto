@@ -4,7 +4,7 @@ maintainer: "palmskog@gmail.com"
 homepage: "https://github.com/coq-community/lemma-overloading"
 dev-repo: "https://github.com/coq-community/lemma-overloading.git"
 bug-reports: "https://github.com/coq-community/lemma-overloading/issues"
-license: "GPL3"
+license: "GPL 3"
 
 build: [make "-j%{jobs}%"]
 install: [make "install"]

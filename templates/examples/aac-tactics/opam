@@ -4,7 +4,7 @@ maintainer: "palmskog@gmail.com"
 homepage: "https://github.com/coq-community/aac-tactics"
 dev-repo: "https://github.com/coq-community/aac-tactics.git"
 bug-reports: "https://github.com/coq-community/aac-tactics/issues"
-license: "LGPL3"
+license: "LGPL 3"
 
 build: [make "-j%{jobs}%"]
 install: [make "install"]
