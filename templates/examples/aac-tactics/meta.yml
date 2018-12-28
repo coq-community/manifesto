@@ -5,14 +5,15 @@ shortname: aac-tactics
 description: |
   This Coq plugin provides tactics for rewriting universally quantified
   equations, modulo associativity and commutativity of some operator.
-
   The tactics can be applied for custom operators by registering the
   operators and their properties as type class instances. Many common
   operator instances, such as for Z binary arithmetic and booleans, are
   provided with the plugin.
 
-  The implementation and underlying theory is decribed in the paper
-  [Tactics for Reasoning modulo AC in Coq](https://arxiv.org/abs/1106.4448).
+paper:
+  doi: 10.1007/978-3-642-25379-9_14
+  url: https://arxiv.org/abs/1106.4448
+  title: Tactics for Reasoning modulo AC in Coq
 
 authors:
 - name: Thomas Braibant
@@ -31,7 +32,8 @@ maintainers:
 opam-file-maintainer: palmskog@gmail.com
 
 license:
-  fullname: GNU Lesser General Public License v3
+  fullname: GNU Lesser General Public License v3.0 or later
+  identifier: LGPL-3.0-or-later
   shortname: LGPL 3
 
 plugin: true
