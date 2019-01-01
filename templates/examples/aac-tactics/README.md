@@ -4,6 +4,10 @@
 [![Contributing][contributing-shield]][contributing-link]
 [![Code of Conduct][conduct-shield]][conduct-link]
 [![Gitter][gitter-shield]][gitter-link]
+[![DOI][doi-shield]][doi-link]
+
+[doi-shield]: https://zenodo.org/badge/DOI/10.1007/978-3-642-25379-9_14.svg
+[doi-link]: https://doi.org/10.1007/978-3-642-25379-9_14
 
 [travis-shield]: https://travis-ci.com/coq-community/aac-tactics.svg?branch=master
 [travis-link]: https://travis-ci.com/coq-community/aac-tactics/builds
@@ -19,15 +23,14 @@
 
 This Coq plugin provides tactics for rewriting universally quantified
 equations, modulo associativity and commutativity of some operator.
-
 The tactics can be applied for custom operators by registering the
 operators and their properties as type class instances. Many common
 operator instances, such as for Z binary arithmetic and booleans, are
 provided with the plugin.
 
-The implementation and underlying theory is decribed in the paper
-[Tactics for Reasoning modulo AC in Coq](https://arxiv.org/abs/1106.4448).
 
+More details about the project can be found in the paper
+[Tactics for Reasoning modulo AC in Coq](https://arxiv.org/abs/1106.4448).
 
 ## Meta
 
@@ -38,7 +41,7 @@ The implementation and underlying theory is decribed in the paper
 - Coq-community maintainer(s):
   - Fabian Kunze ([**@fakusb**](https://github.com/fakusb))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
-- License: [GNU Lesser General Public License v3](LICENSE)
+- License: [GNU Lesser General Public License v3.0 or later](LICENSE)
 - Compatible Coq versions: Coq master (use the corresponding branch or release for other Coq versions)
 - Compatible OCaml versions: all versions supported by Coq
 - Additional dependencies: none

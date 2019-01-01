@@ -4,6 +4,10 @@
 [![Contributing][contributing-shield]][contributing-link]
 [![Code of Conduct][conduct-shield]][conduct-link]
 [![Gitter][gitter-shield]][gitter-link]
+[![DOI][doi-shield]][doi-link]
+
+[doi-shield]: https://zenodo.org/badge/DOI/10.1017/S0956796813000051.svg
+[doi-link]: https://doi.org/10.1017/S0956796813000051
 
 [travis-shield]: https://travis-ci.com/coq-community/lemma-overloading.svg?branch=master
 [travis-link]: https://travis-ci.com/coq-community/lemma-overloading/builds
@@ -17,10 +21,8 @@
 [gitter-shield]: https://img.shields.io/badge/chat-on%20gitter-%23c1272d.svg
 [gitter-link]: https://gitter.im/coq-community/Lobby
 
-This project contains Hoare Type Theory libraries presented
-in the paper [How to make ad hoc proof automation less ad hoc][paper].
-
-The project demonstrates a series of design patterns for programming
+This project contains Hoare Type Theory libraries which
+demonstrate a series of design patterns for programming
 with [canonical structures][manual] that enable one to carefully
 and predictably coax Coq's type inference engine into triggering
 the execution of user-supplied algorithms during unification, and
@@ -28,9 +30,11 @@ illustrates these patterns through several realistic examples drawn
 from Hoare Type Theory. The project also contains typeclass-based
 re-implementations for comparison.
 
-[paper]: https://software.imdea.org/~aleks/papers/lessadhoc/journal.pdf
 [manual]: https://coq.inria.fr/distrib/current/refman/addendum/canonical-structures.html
 
+
+More details about the project can be found in the paper
+[How to make ad hoc proof automation less ad hoc](https://software.imdea.org/~aleks/papers/lessadhoc/journal.pdf).
 
 ## Meta
 
@@ -42,10 +46,10 @@ re-implementations for comparison.
 - Coq-community maintainer(s):
   - Anton Trunov ([**@anton-trunov**](https://github.com/anton-trunov))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
-- License: [GNU General Public License v3](LICENSE.md)
-- Compatible Coq versions: Coq 8.8 or greater (use releases for other Coq versions)
+- License: [GNU General Public License v3.0 or later](LICENSE.md)
+- Compatible Coq versions: Coq 8.8 or later (use releases for other Coq versions)
 - Additional dependencies:
-  - [MathComp](https://math-comp.github.io/math-comp/) 1.7.0 or greater (`ssreflect` suffices)
+  - [MathComp](https://math-comp.github.io/math-comp/) 1.7.0 or later (`ssreflect` suffices)
 
 
 

@@ -3,10 +3,8 @@ fullname: Lemma overloading
 shortname: lemma-overloading
 
 description: |
-  This project contains Hoare Type Theory libraries presented
-  in the paper [How to make ad hoc proof automation less ad hoc][paper].
-
-  The project demonstrates a series of design patterns for programming
+  This project contains Hoare Type Theory libraries which
+  demonstrate a series of design patterns for programming
   with [canonical structures][manual] that enable one to carefully
   and predictably coax Coq's type inference engine into triggering
   the execution of user-supplied algorithms during unification, and
@@ -14,8 +12,12 @@ description: |
   from Hoare Type Theory. The project also contains typeclass-based
   re-implementations for comparison.
 
-  [paper]: https://software.imdea.org/~aleks/papers/lessadhoc/journal.pdf
   [manual]: https://coq.inria.fr/distrib/current/refman/addendum/canonical-structures.html
+
+paper:
+  doi: 10.1017/S0956796813000051
+  url: https://software.imdea.org/~aleks/papers/lessadhoc/journal.pdf
+  title: How to make ad hoc proof automation less ad hoc
 
 authors:
 - name: Georges Gonthier
@@ -36,12 +38,13 @@ maintainers:
 opam-file-maintainer: palmskog@gmail.com
 
 license:
-  fullname: GNU General Public License v3
+  fullname: GNU General Public License v3.0 or later
+  identifier: GPL-3.0-or-later
   shortname: GPL 3
   file: LICENSE.md
 
 supported_coq_versions:
-  text: Coq 8.8 or greater (use releases for other Coq versions)
+  text: Coq 8.8 or later (use releases for other Coq versions)
   opam: '{(>= "8.8" & < "8.10~") | (= "dev")}'
 
 tested_coq_versions:
@@ -57,7 +60,7 @@ dependencies:
     version: '{(>= "1.7.0" & < "1.8~") | (= "dev")}'
   nix: ssreflect
   description: |
-    [MathComp](https://math-comp.github.io/math-comp/) 1.7.0 or greater (`ssreflect` suffices)
+    [MathComp](https://math-comp.github.io/math-comp/) 1.7.0 or later (`ssreflect` suffices)
 
 namespace: LemmaOverloading
 

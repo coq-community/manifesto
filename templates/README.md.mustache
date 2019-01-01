@@ -4,6 +4,12 @@
 [![Contributing][contributing-shield]][contributing-link]
 [![Code of Conduct][conduct-shield]][conduct-link]
 [![Gitter][gitter-shield]][gitter-link]
+{{# paper }}
+[![DOI][doi-shield]][doi-link]
+
+[doi-shield]: https://zenodo.org/badge/DOI/{{ doi }}.svg
+[doi-link]: https://doi.org/{{ doi }}
+{{/ paper }}
 
 [travis-shield]: https://travis-ci.com/coq-community/{{ shortname }}.svg?branch=master
 [travis-link]: https://travis-ci.com/coq-community/{{ shortname }}/builds
@@ -18,6 +24,11 @@
 [gitter-link]: https://gitter.im/coq-community/Lobby
 
 {{& description }}
+
+{{# paper }}
+More details about the project can be found in the paper
+[{{ title }}]({{ url }}).
+{{/ paper }}
 
 ## Meta
 
