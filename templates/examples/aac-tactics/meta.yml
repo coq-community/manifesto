@@ -34,7 +34,6 @@ opam-file-maintainer: palmskog@gmail.com
 license:
   fullname: GNU Lesser General Public License v3.0 or later
   identifier: LGPL-3.0-or-later
-  shortname: LGPL 3
 
 plugin: true
 

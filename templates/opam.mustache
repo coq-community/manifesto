@@ -4,7 +4,7 @@ maintainer: "{{& opam-file-maintainer }}{{^ opam-file-maintainer }}palmskog@gmai
 homepage: "https://github.com/coq-community/{{ shortname }}"
 dev-repo: "https://github.com/coq-community/{{ shortname }}.git"
 bug-reports: "https://github.com/coq-community/{{ shortname }}/issues"
-{{# license }}license: "{{ shortname }}"{{/ license }}
+{{# license }}license: "{{ identifier }}"{{/ license }}
 
 build: [make "-j%{jobs}%"]
 install: [make "install"]
@@ -21,12 +21,12 @@ depends: [
 ]
 
 tags: [
-{{# keywords }}
-  "keyword:{{ name }}"
-{{/ keywords }}
 {{# categories }}
   "category:{{ name }}"
 {{/ categories }}
+{{# keywords }}
+  "keyword:{{ name }}"
+{{/ keywords }}
 {{# date }}
   "date:{{ date }}"
 {{/ date }}
