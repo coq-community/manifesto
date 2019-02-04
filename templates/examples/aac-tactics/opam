@@ -4,7 +4,7 @@ maintainer: "palmskog@gmail.com"
 homepage: "https://github.com/coq-community/aac-tactics"
 dev-repo: "https://github.com/coq-community/aac-tactics.git"
 bug-reports: "https://github.com/coq-community/aac-tactics/issues"
-license: "LGPL 3"
+license: "LGPL-3.0-or-later"
 
 build: [make "-j%{jobs}%"]
 install: [make "install"]
@@ -14,13 +14,13 @@ depends: [
 ]
 
 tags: [
+  "category:Miscellaneous/Coq Extensions"
+  "category:Computer Science/Decision Procedures and Certified Algorithms/Decision procedures"
   "keyword:reflexive tactic"
   "keyword:rewriting"
   "keyword:rewriting modulo associativity and commutativity"
   "keyword:rewriting modulo ac"
   "keyword:decision procedure"
-  "category:Miscellaneous/Coq Extensions"
-  "category:Computer Science/Decision Procedures and Certified Algorithms/Decision procedures"
   "logpath:AAC_tactics"
 ]
 authors: [

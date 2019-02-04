@@ -40,7 +40,6 @@ opam-file-maintainer: palmskog@gmail.com
 license:
   fullname: GNU General Public License v3.0 or later
   identifier: GPL-3.0-or-later
-  shortname: GPL 3
   file: LICENSE.md
 
 supported_coq_versions:
