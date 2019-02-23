@@ -1,4 +1,4 @@
-opam-version: "1.2"
+opam-version: "2.0"
 maintainer: "{{& opam-file-maintainer }}{{^ opam-file-maintainer }}palmskog@gmail.com{{/ opam-file-maintainer }}"
 
 homepage: "https://github.com/{{ organization }}/{{ shortname }}"
@@ -6,10 +6,16 @@ dev-repo: "https://github.com/{{ organization }}/{{ shortname }}.git"
 bug-reports: "https://github.com/{{ organization }}/{{ shortname }}/issues"
 {{# license }}license: "{{ identifier }}"{{/ license }}
 
+synopsis: "{{& synopsis }}"
+description: """
+{{& description }}"""
+
 build: [make "-j%{jobs}%"]
 install: [make "install"]
 remove: ["rm" "-R" "%{lib}%/coq/user-contrib/{{ namespace }}"]
+flags: light-uninstall
 depends: [
+  "ocaml"
 {{# supported_coq_versions }}
   "coq" {{& opam }}
 {{/ supported_coq_versions }}
