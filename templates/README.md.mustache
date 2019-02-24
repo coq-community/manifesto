@@ -11,8 +11,8 @@
 [doi-link]: https://doi.org/{{ doi }}
 {{/ paper }}
 
-[travis-shield]: https://travis-ci.com/coq-community/{{ shortname }}.svg?branch=master
-[travis-link]: https://travis-ci.com/coq-community/{{ shortname }}/builds
+[travis-shield]: https://travis-ci.com/{{ organization }}/{{ shortname }}.svg?branch=master
+[travis-link]: https://travis-ci.com/{{ organization }}/{{ shortname }}/builds
 
 [contributing-shield]: https://img.shields.io/badge/contributions-welcome-%23f7931e.svg
 [contributing-link]: https://github.com/coq-community/manifesto/blob/master/CONTRIBUTING.md
@@ -36,7 +36,7 @@ More details about the project can be found in the paper
 {{# authors }}
   - {{ name }}{{# initial }} (initial){{/ initial }}
 {{/ authors }}
-- Coq-community maintainer(s):
+- Maintainer(s):
 {{# maintainers }}
   - {{ name }} ([**@{{ nickname }}**](https://github.com/{{ nickname }}))
 {{/ maintainers }}
@@ -66,7 +66,7 @@ opam install coq-{{ shortname }}
 To instead build and install manually, do:
 
 ``` shell
-git clone https://github.com/coq-community/{{ shortname }}
+git clone https://github.com/{{ organization }}/{{ shortname }}
 cd {{ shortname }}
 make   # or make -j <number-of-cores-on-your-machine>
 make install

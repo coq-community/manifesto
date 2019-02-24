@@ -23,14 +23,12 @@
 
 This project contains Hoare Type Theory libraries which
 demonstrate a series of design patterns for programming
-with [canonical structures][manual] that enable one to carefully
+with canonical structures that enable one to carefully
 and predictably coax Coq's type inference engine into triggering
 the execution of user-supplied algorithms during unification, and
 illustrates these patterns through several realistic examples drawn
 from Hoare Type Theory. The project also contains typeclass-based
 re-implementations for comparison.
-
-[manual]: https://coq.inria.fr/distrib/current/refman/addendum/canonical-structures.html
 
 
 More details about the project can be found in the paper
@@ -43,7 +41,7 @@ More details about the project can be found in the paper
   - Beta Ziliani (initial)
   - Aleksandar Nanevski (initial)
   - Derek Dreyer (initial)
-- Coq-community maintainer(s):
+- Maintainer(s):
   - Anton Trunov ([**@anton-trunov**](https://github.com/anton-trunov))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
 - License: [GNU General Public License v3.0 or later](LICENSE.md)

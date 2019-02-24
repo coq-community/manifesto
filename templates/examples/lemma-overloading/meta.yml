@@ -1,18 +1,19 @@
 ---
 fullname: Lemma overloading
 shortname: lemma-overloading
+organization: coq-community
+
+synopsis: Libraries demonstrating design patterns for programming and proving with canonical structures in Coq
 
 description: |
   This project contains Hoare Type Theory libraries which
   demonstrate a series of design patterns for programming
-  with [canonical structures][manual] that enable one to carefully
+  with canonical structures that enable one to carefully
   and predictably coax Coq's type inference engine into triggering
   the execution of user-supplied algorithms during unification, and
   illustrates these patterns through several realistic examples drawn
   from Hoare Type Theory. The project also contains typeclass-based
   re-implementations for comparison.
-
-  [manual]: https://coq.inria.fr/distrib/current/refman/addendum/canonical-structures.html
 
 paper:
   doi: 10.1017/S0956796813000051

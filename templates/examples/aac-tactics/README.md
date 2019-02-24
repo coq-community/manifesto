@@ -38,7 +38,7 @@ More details about the project can be found in the paper
   - Thomas Braibant (initial)
   - Damien Pous (initial)
   - Fabian Kunze
-- Coq-community maintainer(s):
+- Maintainer(s):
   - Fabian Kunze ([**@fakusb**](https://github.com/fakusb))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
 - License: [GNU Lesser General Public License v3.0 or later](LICENSE)
