@@ -34,6 +34,6 @@ tags: [
 ]
 authors: [
 {{# authors }}
-  "{{& name }}"
+  "{{& name }}{{# email }} <{{& email }}>{{/ email }}"
 {{/ authors }}
 ]
