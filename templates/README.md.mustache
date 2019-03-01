@@ -1,4 +1,4 @@
-# {{ fullname }}
+# {{& fullname }}
 
 [![Travis][travis-shield]][travis-link]
 [![Contributing][contributing-shield]][contributing-link]
@@ -41,16 +41,16 @@ More details about the project can be found in the paper
   - {{& name }} ([**@{{ nickname }}**](https://github.com/{{ nickname }}))
 {{/ maintainers }}
 {{# license }}
-- License: [{{ fullname }}]({{ file }}{{^ file }}LICENSE{{/ file }})
+- License: [{{& fullname }}]({{ file }}{{^ file }}LICENSE{{/ file }})
 {{/ license }}
 {{# supported_coq_versions }}
-- Compatible Coq versions: {{ text }}
+- Compatible Coq versions: {{& text }}
 {{/ supported_coq_versions }}
 {{# plugin }}
 - Compatible OCaml versions: all versions supported by Coq
 {{/ plugin }}
 - Additional dependencies:{{# dependencies }}
-  - {{ description }}
+  - {{& description }}
 {{/ dependencies }}{{^ dependencies }} none{{/ dependencies }}
 
 ## Building and installation instructions
