@@ -31,7 +31,7 @@ tags: [
   "category:{{ name }}"
 {{/ categories }}
 {{# keywords }}
-  "keyword:{{ name }}"
+  "keyword:{{& name }}"
 {{/ keywords }}
 {{# date }}
   "date:{{ date }}"
@@ -40,6 +40,6 @@ tags: [
 ]
 authors: [
 {{# authors }}
-  "{{ name }}"
+  "{{& name }}"
 {{/ authors }}
 ]

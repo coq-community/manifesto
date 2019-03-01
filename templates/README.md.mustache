@@ -34,11 +34,11 @@ More details about the project can be found in the paper
 
 - Author(s):
 {{# authors }}
-  - {{ name }}{{# initial }} (initial){{/ initial }}
+  - {{& name }}{{# initial }} (initial){{/ initial }}
 {{/ authors }}
 - Maintainer(s):
 {{# maintainers }}
-  - {{ name }} ([**@{{ nickname }}**](https://github.com/{{ nickname }}))
+  - {{& name }} ([**@{{ nickname }}**](https://github.com/{{ nickname }}))
 {{/ maintainers }}
 {{# license }}
 - License: [{{ fullname }}]({{ file }}{{^ file }}LICENSE{{/ file }})
