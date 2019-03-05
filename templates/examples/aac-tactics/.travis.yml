@@ -7,7 +7,7 @@ matrix:
   include:
 
   # Test supported versions of Coq
-  - env: COQ=https://github.com/coq/coq/tarball/master
+  - env: COQ=https://github.com/coq/coq-on-cachix/tarball/master
 
   # Test opam package
   - language: minimal
