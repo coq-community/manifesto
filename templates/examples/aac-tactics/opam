@@ -1,15 +1,27 @@
-opam-version: "1.2"
+opam-version: "2.0"
 maintainer: "palmskog@gmail.com"
 
 homepage: "https://github.com/coq-community/aac-tactics"
-dev-repo: "https://github.com/coq-community/aac-tactics.git"
+dev-repo: "git+https://github.com/coq-community/aac-tactics.git"
 bug-reports: "https://github.com/coq-community/aac-tactics/issues"
 license: "LGPL-3.0-or-later"
+
+synopsis: "This Coq plugin provides tactics for rewriting universally quantified equations, modulo associative (and possibly commutative) operators"
+description: """
+This Coq plugin provides tactics for rewriting universally quantified
+equations, modulo associativity and commutativity of some operator.
+The tactics can be applied for custom operators by registering the
+operators and their properties as type class instances. Many common
+operator instances, such as for Z binary arithmetic and booleans, are
+provided with the plugin.
+"""
 
 build: [make "-j%{jobs}%"]
 install: [make "install"]
 remove: ["rm" "-R" "%{lib}%/coq/user-contrib/AAC_tactics"]
+flags: light-uninstall
 depends: [
+  "ocaml"
   "coq" {= "dev"}
 ]
 
