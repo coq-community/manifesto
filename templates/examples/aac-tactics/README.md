@@ -6,9 +6,6 @@
 [![Gitter][gitter-shield]][gitter-link]
 [![DOI][doi-shield]][doi-link]
 
-[doi-shield]: https://zenodo.org/badge/DOI/10.1007/978-3-642-25379-9_14.svg
-[doi-link]: https://doi.org/10.1007/978-3-642-25379-9_14
-
 [travis-shield]: https://travis-ci.com/coq-community/aac-tactics.svg?branch=master
 [travis-link]: https://travis-ci.com/coq-community/aac-tactics/builds
 
@@ -20,6 +17,9 @@
 
 [gitter-shield]: https://img.shields.io/badge/chat-on%20gitter-%23c1272d.svg
 [gitter-link]: https://gitter.im/coq-community/Lobby
+
+[doi-shield]: https://zenodo.org/badge/DOI/10.1007/978-3-642-25379-9_14.svg
+[doi-link]: https://doi.org/10.1007/978-3-642-25379-9_14
 
 This Coq plugin provides tactics for rewriting universally quantified
 equations, modulo associativity and commutativity of some operator.
@@ -38,7 +38,7 @@ More details about the project can be found in the paper
   - Thomas Braibant (initial)
   - Damien Pous (initial)
   - Fabian Kunze
-- Maintainer(s):
+- Coq-community maintainer(s):
   - Fabian Kunze ([**@fakusb**](https://github.com/fakusb))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
 - License: [GNU Lesser General Public License v3.0 or later](LICENSE)
