@@ -1,4 +1,4 @@
-# Lemma overloading
+# Lemma Overloading
 
 [![Travis][travis-shield]][travis-link]
 [![Contributing][contributing-shield]][contributing-link]
@@ -45,16 +45,15 @@ More details about the project can be found in the paper
   - Anton Trunov ([**@anton-trunov**](https://github.com/anton-trunov))
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
 - License: [GNU General Public License v3.0 or later](LICENSE.md)
-- Compatible Coq versions: Coq 8.8 or later (use releases for other Coq versions)
-- Additional dependencies:
+- Compatible Coq versions: 8.8 or later (use releases for other Coq versions)
+- Additional Coq dependencies:
   - [MathComp](https://math-comp.github.io/math-comp/) 1.7.0 or later (`ssreflect` suffices)
-
 
 
 ## Building and installation instructions
 
-The easiest way to install the latest released version is via
-[OPAM](https://opam.ocaml.org/doc/Install.html):
+The easiest way to install the latest released version of Lemma Overloading
+is via [OPAM](https://opam.ocaml.org/doc/Install.html):
 
 ```shell
 opam repo add coq-released https://coq.inria.fr/opam/released
@@ -72,6 +71,7 @@ make install
 
 After installation, the included modules are available under
 the `LemmaOverloading` namespace.
+
 
 ## Files described in the paper
 

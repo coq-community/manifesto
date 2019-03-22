@@ -45,14 +45,17 @@ matrix:
   - env:
     - COQ=8.9
     <<: *NIX
-  - env:
-    - COQ=8.8
-    <<: *NIX
 
   # Test supported versions of Coq via OPAM
   - env:
     - COQ_IMAGE=coqorg/coq:dev
-    - CONTRIB_NAME=coq-lemma-overloading
+    - CONTRIB_NAME=coq-chapar
     - NJOBS=2
     <<: *OPAM
 
+  # Test extracted via OPAM
+  - env:
+    - COQ_IMAGE=coqorg/coq:dev
+    - CONTRIB_NAME=coq-chapar-stores
+    - NJOBS=2
+    <<: *OPAM

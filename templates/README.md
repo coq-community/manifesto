@@ -12,10 +12,12 @@ following way:
 
 ``` shell
 for dir in examples/*; do
-  for f in *.mustache .*.mustache; do
+  for f in default.nix.mustache README.md.mustache .travis.yml.mustache; do
     mustache $dir/meta.yml $f > $dir/${f%.mustache} && \
     echo "$dir/${f%.mustache}"
   done
+  mustache $dir/meta.yml coq.opam.mustache > $dir/coq-${dir#examples/}.opam && \
+  echo "$dir/coq-${dir#examples/}.opam"
 done
 ```
 You may find documentation, advice and guidelines on how to maintain a project

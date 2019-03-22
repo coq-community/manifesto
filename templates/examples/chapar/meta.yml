@@ -1,0 +1,334 @@
+---
+fullname: Chapar
+shortname: chapar
+organization: coq-community
+community: true
+
+synopsis: >-
+  A framework for verification of causal consistency for distributed key-value stores
+  and their clients in Coq
+
+description: |
+  A framework for modular verification of causal consistency for replicated key-value
+  store implementations and their client programs in Coq. Includes proofs of the causal consistency
+  of two key-value store implementations and a simple automatic model checker for the correctness
+  of client programs.
+
+paper:
+  doi: 10.1145/2837614.2837622  
+  url: http://adam.chlipala.net/papers/ChaparPOPL16/
+  title: 'Chapar: Certified Causally Consistent Distributed Key-value Stores'
+
+authors:
+- name: Mohsen Lesani
+  initial: true
+- name: Christian J. Bell
+  initial: true
+- name: Adam Chlipala
+  initial: true
+
+maintainers:
+- name: Karl Palmskog
+  nickname: palmskog
+
+opam-file-maintainer: palmskog@gmail.com
+
+license:
+  fullname: MIT License
+  identifier: MIT
+
+plugin: false
+
+supported_coq_versions:
+  text: 8.9 or later
+  opam: '{(>= "8.9" & < "8.10~") | (= "dev")}'
+
+tested_coq_nix_versions:
+- version_or_url: https://github.com/coq/coq-on-cachix/tarball/master
+- version_or_url: 8.9
+
+tested_coq_opam_versions:
+- version: dev
+
+namespace: Chapar
+
+extracted:
+  extracted_fullname: Chapar Stores
+  extracted_shortname: chapar-stores
+
+  extracted_synopsis: Three executable causally consistent distributed key-value stores
+  extracted_description: |
+    Three key-value stores, verified to be causally consistent in
+    the Coq proof assistant and extracted to executable code.
+
+  target: stores
+
+  supported_ocaml_versions:
+    text: 4.05.0 or later
+    opam: '{>= "4.05.0"}'
+
+  tested_extracted_coq_opam_version: dev
+
+  extracted_dependencies:
+  - opam:
+      name: ocamlbuild
+      version: '{build}'
+    nix: ocamlbuild
+    description: >-
+      [OCamlbuild](https://github.com/ocaml/ocamlbuild)
+  - opam:
+      name: batteries
+      version: '{>= "2.8.0"}'
+    nix: batteries
+    description: >-
+      [Batteries Included](https://github.com/ocaml-batteries-team/batteries-included) 2.8.0 or later
+
+keywords:
+- name: causal consistency
+- name: key-value stores
+- name: distributed algorithms
+- name: program verification
+
+categories:
+- name: Computer Science/Concurrent Systems and Protocols/Theory of concurrent systems
+
+documentation: |
+  ## Documentation
+  
+  ### Coq Framework
+  
+  The Coq definitions and proofs are located in the `coq` directory. The code location of the definitions and lemmas presented in the paper are listed below.
+  
+  #### Semantics and the Proof Technique
+
+  - Section 2, Figure 3 (Program): `KVStore.v`, `Section ValSec`
+  - Section 2, Figure 4 (Key-value Store Algorithm Interface): `KVStore.v`, `Module Type AlgDef`
+  - Section 2, Figure 5 (Concrete Operational Semantics): `KVStore.v`, `Module ConcExec`
+  - Section 3, Figure 6 (Abstract Operational Semantics): `KVStore.v`, `Module AbsExec`
+  - Section 4, Figure 8 (Concrete Instrumented Operational Semantics): `KVStore.v`, `Module InstConcExec`
+  - Section 4, Figure 10 (Correctness Condition WellRec): `KVStore.v`, `Module Type CauseObl`
+  - Section 4, Figure 11 (Causal relation): `KVStore.v`, `Definition cause_step` and `Inductive cause`
+  - Section 4, Figure 12 (Sequential Operational Semantics): `KVStore.v`, `Module SeqExec`
+  - Section 4, Definition 2 (Causal Consistency) and Theorem 2 (Sufficiency of Well-reception): `KVStore.v`, `Theorem CausallyConsistent`. Note that `(CauseObl: CauseObl AlgDef)` is a parameter of the module `ExecToAbstExec`.
+  - Section 4, Lemma 1: `KVStore.v`, `Lemma FaultFreedom`. Note that `(CauseObl: CauseObl AlgDef)` is a parameter of the module `ExecToAbstExec`.
+  
+  #### Algorithms
+
+  - Section 5, Figure 13 (Algorithm 1): `KVSAlg1.v`, `Module Type KVSAlg1`
+  - Section 5, Theorem 3: `KVSAlg1.v`, `Module KVSAlg1CauseObl (SyntaxArg: SyntaxPar) <: CauseObl KVSAlg1 SyntaxArg`
+  - Section 5, Corollary 1: `KVSAlg1.v`, `Lemma CausallyConsistent`
+  - Section 5, Lemma 2 (Clock Monotonicity): `KVSAlg1.v`, `Lemma cause_clock`
+  - Section 5, Lemma 3 (CauseCond): `KVSAlg1.v`, `Lemma cause_rec`
+  - Section 5, Figure 14 (Algorithm 2): `KVSAlg2.v`, `Module Type KVSAlg2`
+  - Section 5, Theorem 3: `KVSAlg1.v`, `Module KVSAlg2CauseObl (SyntaxArg: SyntaxPar) <: CauseObl KVSAlg2 SyntaxArg`
+  - Secton 5, Corollary 2: `KVSAlg2.v`, `Lemma CausallyConsistent`
+  - Secton 5, Lemma 4 (Update Dependency Transitivity): `KVSAlg2.v`, `Lemma cause_dep`
+  - Secton 5, Lemma 5: `KVSAlg2.v`, `Lemma cause_received_received`
+  - Secton 5, Lemma 6 (CauseCond): `KVSAlg2.v`, `Lemma cause_rec`
+  - Section 10, Figure 16 (Algorithm 3): `KVSAlg3.v`, `Module Type KVSAlg3`
+  - Section 10, Theorem 5: `KVSAlg3.v`, `Module KVSAlg3CauseObl (SyntaxArg: SyntaxPar) <: CauseObl KVSAlg3 SyntaxArg`
+  - Secton 5, Corollary 3: `KVSAlg3.v`, `Lemma CausallyConsistent`
+  - Section 5, Lemma 7 (Clock Monotonicity): `KVSAlg3.v`, `Lemma cause_clock`
+  - Section 5, Lemma 8 (Dep less than equal Rec): `KVSAlg3.v`, `Lemma dep_leq_rec`
+  - Section 5, Lemma 9 (CauseCond): `KVSAlg3.v`, `Lemma cause_rec`
+  
+  #### Clients
+  - Section 1, Program 1: `Clients.v`, `Definition prog_photo_upload`
+  - Section 1, Program 2: `Clients.v`, `Definition prog_lost_ring`
+  - Section 10, Program 3: `ListClient.v`
+  - Section 2, Theorem 1: `Clients.v`, `Lemma CauseConsistent_Prog1`
+  - Section 3, Definition 1 (Cause-content Program): `Definition CausallyContent`
+  - Section 6: `ReflectiveAbstractSemantics.v`
+
+  ### Experiment Setup
+  
+  #### Directory structure
+
+  - root (directory): The execution scripts described in the section Running Experiments below
+  
+  - `coq` (directory); the Coq verification framework:
+    * `Framework/KVStore.v`: The basic definitions, the semantics and accompanying lemma
+    * `Framework/ReflectiveAbstractSemantics.v`: The client verification definitions and lemmas
+    * `Algorithms/KVSAlg1.v`: The definition and proof of algorithm 1 in the paper
+    * `Algorithms/KVSAlg2.v`: The definition and proof of algorithm 2 in the paper
+    * `Algorithms/KVSAlg3.v`: The definition and proof of algorithm 3 in the appendix
+    * `Algorithms/Extract.v`: The Coq file that extracts the algorithms
+    * `Examples/Clients.v`: Verified client program
+    * `Examples/ListClient.v`: Verified client program
+    * `Lib` (directory): General purpose Coq libraries
+
+  - `ml` (directory); the OCaml runtime to execute the algorithms:
+    * `algorithm.ml`: Key-value store algorithm shared interface
+    * `algorithm1.ml`, `algorithm2.ml`, `algorithm3.ml`: Wrappers for the extracted algorithms
+    * `benchgen.ml`: Benchmark generation and storing program
+    * `benchprog.ml`: Benchmark retrieval program
+    * `commonbench.ml`: Common definitions for benchmarks
+    * `common.ml`: Common definitions
+    * `configuration.ml`: Execution configuration definitions
+    * `readConfig.ml`: Configuration retrieval program
+    * `runtime.ml`: Execution runtime
+    * `launchStore1.ml`, `launchStore2.ml`, `launchStore3.ml`: Launchers for the extracted algorithms
+    * `util.ml`: General purpose OCaml functions
+    * `experiment.ml`: Small OCaml programming tests
+
+  ### Running Experiments
+
+  #### Overview
+
+  We run with 4 nodes called the worker nodes and a node called the master node that keeps
+  track of the start and end of the runs. The scripts support running with both the current terminal
+  blocked or detached. In the former, the terminal should be active for the entire execution time. To
+  avoid this, we use another node called the launcher node. Repeating and collecting the results
+  of the runs is delegated to the launcher node. The terminal can be closed and the execution
+  results can be retrieved later from the launcher node. The four workers, the master and the
+  launcher can be different nodes. However, to simplify running, the scripts support assigning
+  one host to all of these roles. This is the default setting.
+  
+  The settings of the nodes can be edited in the file `Settings.txt`. The following should be
+  noted if other machines are used as the running nodes.
+  The host should have password-less ssh access to the launcher node. The launcher node
+  should have password-less ssh access to the other nodes. This can be done by copying
+  the public key of the accessing machine to the accessed machine by a command like:
+  ```
+  cat ~/.ssh/id_dsa.pub | ssh -l remoteuser remote.example.com 'cat >> ~/.ssh/authorized_keys'
+  ```
+  The port numbers 9100, 9101, 9102, and 9103 should be open on the worker nodes
+  1, 2, 3 and 4 respectively. The port number 9099 should be open on the master node.
+  
+  #### A simple run
+
+  To start the run:
+  ```
+  ./batchrundetach
+  ```
+  To check the status of the run:
+  ```
+  ./printlauncherout
+  ```
+  To get the results once the run is finished:
+  ```
+  ./fetchresults
+  ```
+  The result are stored in the file `RemoteAllResults.txt`. See `fetchresults` below for the format
+  of the results.
+    
+  #### Settings and scripts
+
+  All of the following files are in the root directory:
+
+  - `Settings.txt`
+
+    * `KeyRange`: The range of keys in the generated benchmarks is from 0 to this number. For our experiments, it is set to 50.
+    * `RepeatCount`: The number of times that each experiment is repeated. For our experiments, it is set to 5.
+    * `LauncherNode`: The user name and the ip of the launcher node
+    * `MasterNode`: The user name and the ip of the master node
+    * `WorkerNodes`: The user name and the ip of the worker nodes
+  
+  - `batchrun`:
+    This is the place where the experiments are listed. Each call to the script `run` is an experiment. The arguments are:
+
+    * argument 1: The number of nodes. This is 4 for our purpose.
+    * argument 2: The number of operations per server. This is 60000 in our experiments.
+    * argument 3: The percent of puts. This ranges from 10 to 90 in our experiments.
+             
+    This script can be called without using the launcher node. The current terminal is blocked.
+    See batchrundetach below for detached execution of the experiments.
+  
+  - `batchrundetach`: To execute using the launcher node. The current terminal is detached.
+  
+  - `printlauncherout`: To see the output of the launcher even while the experiments are being run
+       
+  - `printnodesout`: To see the output of the worker nodes
+  
+  - `fetchresults`: To get the results. The fetched files are:
+
+    * `RemoteAllResults.txt`: The timing of the replicas
+    * `RemoteAllOutputs.txt`: The outputs of the replicas
+    * `RemoteLauncherOutput.txt`: The output of the launcher node
+
+    The following example output is for the algorithm 2 with 4 worker nodes and 40000 operations per
+    node with 10 percent puts. It shows two runs. Under  each run, the time spend by each of the
+    nodes is shown. We compute the maximum of these four numbers to compute the
+    total process time.
+    ```
+    Algorithm: 2
+    Server count: 4
+     Operation count: 40000
+    Put percent: 10
+    Run: 1
+    1.000000
+    3.000000
+    1.000000
+    1.000000
+    Run: 2
+    1.000000
+    1.000000
+    4.000000
+    1.000000
+    ```     
+  
+  - `clearnodes`: To remove the output and result files and the running processes in all the nodes; this is used to start over
+  
+  #### The experiments in the paper
+
+  The goal of our experimental result section was to show that our verification effort can
+  lead to executable code and also to compare the performance of the two algorithms.
+  As described in the paper, the experiments were done with four worker nodes cluster.
+  Each worker node had an Intel(R) Xeon(R) 2.27GHz CPU with 2GB of RAM and ran
+  Linux Ubuntu 14.04.2 with the kernel version 3.13.0-48-generic#80-Ubuntu. The nodes
+  were connected to a gigabit switch.
+  The keys were uniformly selected from 0 to 50 for the benchmarks.
+  Each experiment was repeated 5 times. (The reported numbers are the arithmetic mean of the five runs.)
+  Each node processed 60,000 requests.
+  The put ratio ranged from 10% to 90%.
+  
+  Here are the contents of the two configuration files, `Settings.txt` and `batchrun`:
+  Note: user and ip should be filled with specific values.
+  - `Settings.txt`:
+    ```
+    KeyRange=
+    50
+    RepeatCount=
+    5
+    LauncherNode=
+    <user>@<ip>
+    MasterNode=
+    <user>@<ip>
+    WorkerNodes=
+    <user>@<ip>
+    <user>@<ip>
+    <user>@<ip>
+    <user>@<ip>
+    ```
+  
+  - `batchrun`:
+    ```
+    ./run 4 60000 10
+    ./run 4 60000 20
+    ./run 4 60000 30
+    ./run 4 60000 40
+    ./run 4 60000 50
+    ./run 4 60000 60
+    ./run 4 60000 70
+    ./run 4 60000 80
+    ./run 4 60000 90
+    ```
+
+  #### Interpretation of results from the paper
+
+  As expected, the throughput of both of the stores increases as the ratio of the get operation
+  increases. The second algorithm shows a higher throughput than the first algorithm. The
+  reason is twofold. Firstly, in the first algorithm, the clock function of a node keeps an
+  over-approximation of the dependencies of the node. This over-approximation incurs
+  extra dependencies on updates. On the other hand, the second algorithm does not require
+  any extra dependencies. Therefore, in the first algorithm compared to the second,
+  the updates can have longer waiting times, and the update queues tend to be longer.
+  Therefore, the traversal of the update queue is more time consuming in the first algorithm
+  than the second. Secondly, the update payload that is sent and received by the first
+  algorithm contains the function clock. OCaml cannot marshal functions. However, as
+  the clock function has the finite domain of the participating nodes, it can be serialized to
+  and deserialized from a list. Nonetheless, serialization and de-serialization on every
+  sent and received message adds performance cost. On the other hand, the payload
+  of the second algorithm consists of only data types that can be directly marshalled.
+  Therefore, the second algorithm has no extra marshalling cost.
+---
