@@ -57,14 +57,13 @@ More details about the project can be found in the paper
 {{# plugin }}
 - Compatible OCaml versions: all versions supported by Coq
 {{/ plugin }}
-- Additional dependencies:{{# dependencies }}
-  - {{& description }}
-{{/ dependencies }}{{^ dependencies }} none{{/ dependencies }}
+- Additional Coq dependencies:{{# dependencies }}
+  - {{& description }}{{/ dependencies }}{{^ dependencies }} none{{/ dependencies }}
 
 ## Building and installation instructions
 
-The easiest way to install the latest released version is via
-[OPAM](https://opam.ocaml.org/doc/Install.html):
+The easiest way to install the latest released version of {{& fullname }}
+is via [OPAM](https://opam.ocaml.org/doc/Install.html):
 
 ```shell
 opam repo add coq-released https://coq.inria.fr/opam/released
@@ -82,5 +81,24 @@ make install
 
 After installation, the included modules are available under
 the `{{ namespace }}` namespace.
+
+{{# extracted }}
+## {{& extracted_fullname }}
+
+{{& extracted_description}}
+
+{{# supported_ocaml_versions }}
+- Compatible OCaml versions: {{& text }}
+{{/ supported_ocaml_versions }}
+- Additional OCaml dependencies:{{# extracted_dependencies }}
+  - {{& description }} {{/ extracted_dependencies }}{{^ extracted_dependencies }} none{{/ extracted_dependencies }}
+
+{{& extracted_fullname }} can be installed via OPAM as above using the package name `coq-{{ extracted_shortname }}`.
+
+To instead extract the code and compile manually, use the following command:
+```
+make {{& target }}
+```
+{{/ extracted }}
 
 {{& documentation }}

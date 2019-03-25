@@ -44,13 +44,14 @@ license:
 plugin: true
 
 supported_coq_versions:
-  text: Coq master (use the corresponding branch or release for other Coq versions)
+  text: master (use the corresponding branch or release for other Coq versions)
   opam: '{= "dev"}'
 
-tested_coq_versions:
+tested_coq_nix_versions:
 - version_or_url: https://github.com/coq/coq-on-cachix/tarball/master
 
-tested_coq_opam_version: dev
+tested_coq_opam_versions:
+- version: dev
 
 namespace: AAC_tactics
 
