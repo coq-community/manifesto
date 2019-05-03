@@ -12,8 +12,6 @@ description: """
 
 build: [make "-j%{jobs}%"]
 install: [make "install"]
-remove: ["rm" "-R" "%{lib}%/coq/user-contrib/{{ namespace }}"]
-flags: light-uninstall
 depends: [
   "ocaml"
 {{# supported_coq_versions }}
