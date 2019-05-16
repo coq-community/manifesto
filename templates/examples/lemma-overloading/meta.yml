@@ -48,10 +48,11 @@ license:
 
 supported_coq_versions:
   text: 8.8 or later (use releases for other Coq versions)
-  opam: '{(>= "8.8" & < "8.10~") | (= "dev")}'
+  opam: '{(>= "8.8" & < "8.11~") | (= "dev")}'
 
 tested_coq_nix_versions:
 - version_or_url: https://github.com/coq/coq-on-cachix/tarball/master
+- version_or_url: https://github.com/coq/coq-on-cachix/tarball/v8.10
 - version_or_url: 8.9
 - version_or_url: 8.8
 
@@ -61,7 +62,7 @@ tested_coq_opam_versions:
 dependencies:
 - opam:
     name: coq-mathcomp-ssreflect
-    version: '{(>= "1.7.0" & < "1.8~") | (= "dev")}'
+    version: '{(>= "1.7.0" & < "1.9~") | (= "dev")}'
   nix: ssreflect
   description: |
     [MathComp](https://math-comp.github.io/math-comp/) 1.7.0 or later (`ssreflect` suffices)
