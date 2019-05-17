@@ -1,4 +1,4 @@
-# AAC tactics
+# AAC Tactics
 
 [![Travis][travis-shield]][travis-link]
 [![Contributing][contributing-shield]][contributing-link]
@@ -48,7 +48,7 @@ More details about the project can be found in the paper
 
 ## Building and installation instructions
 
-The easiest way to install the latest released version of AAC tactics
+The easiest way to install the latest released version of AAC Tactics
 is via [OPAM](https://opam.ocaml.org/doc/Install.html):
 
 ```shell

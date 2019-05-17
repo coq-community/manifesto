@@ -41,7 +41,7 @@ plugin: false
 
 supported_coq_versions:
   text: 8.9 or later
-  opam: '{(>= "8.9" & < "8.10~") | (= "dev")}'
+  opam: '{(>= "8.9" & < "8.11~") | (= "dev")}'
 
 tested_coq_nix_versions:
 - version_or_url: https://github.com/coq/coq-on-cachix/tarball/master

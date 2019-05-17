@@ -43,6 +43,9 @@ matrix:
     - COQ=https://github.com/coq/coq-on-cachix/tarball/master
     <<: *NIX
   - env:
+    - COQ=https://github.com/coq/coq-on-cachix/tarball/v8.10
+    <<: *NIX
+  - env:
     - COQ=8.9
     <<: *NIX
   - env:

@@ -15,7 +15,7 @@ the Coq proof assistant and extracted to executable code.
 build: [make "-j%{jobs}%" "stores"]
 depends: [
   "ocaml" {>= "4.05.0"}
-  "coq" {(>= "8.9" & < "8.10~") | (= "dev")}
+  "coq" {(>= "8.9" & < "8.11~") | (= "dev")}
   "ocamlbuild" {build}
   "batteries" {>= "2.8.0"}
 ]
