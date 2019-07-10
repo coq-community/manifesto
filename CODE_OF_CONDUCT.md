@@ -39,8 +39,6 @@ This code of conduct is adapted from the [Idris Community Standards][idris]
 which are themselves adapted from the [Julia Community Standards][julia]
 released under the [MIT licence][license].
 
-[idriss]: https://www.idris-lang.org/documentation/community-standards/
-
+[idris]: https://www.idris-lang.org/documentation/community-standards/
 [julia]: https://julialang.org/community/standards/
-
 [license]: http://idris-lang.org/julia/LICENSE.md
