@@ -139,6 +139,25 @@ and pierre.casteran@labri.fr.
   and stop being maintained. We will generally [archive][archive] the
   repository rather than removing it completely though.
 
+- **What kind of permissions do the members have?**
+
+  Members of the coq-community organization have write-access to all
+  the repositories.  This permission should be used wisely: only minor
+  fixes should be pushed without going through pull requests, and pull
+  requests should preferably be approved by the project maintainer
+  before getting merged.  Some maintainers may decide to protect
+  branches to enforce that all changes go through pull requests and
+  validate some conditions.  Maintainers are given admin-access on the
+  repositories that they maintain.  All members have the permission to
+  create or transfer new repositories, but they should only do so
+  after going through the [standard
+  process](CONTRIBUTING.md#proposing-a-new-package).  At all times,
+  there should be exactly three (active) owners of the organization.
+  The current owners are Karl Palmskog
+  ([**@palmskog**](https://github.com/palmskog)), Anton Trunov
+  ([**anton-trunov**](https://github.com/anton-trunov)), and Théo
+  Zimmermann ([**@Zimmi48**](https://github.com/Zimmi48)).
+
 - **What to do in case of conflicts?**
 
   We will have a governance process to make sure that we can handle conflicts
