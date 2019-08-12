@@ -1,9 +1,9 @@
 ---
 name: Change of maintainer
 about: When a maintainer wants to step down or has become unresponsive.
+title: Change maintainer of project X
+labels: change-maintainer
 ---
-
-## Change of maintainer ##
 
 **Project name and URL:**
 
