@@ -3,6 +3,7 @@ fullname: Lemma Overloading
 shortname: lemma-overloading
 organization: coq-community
 community: true
+travis: true
 
 synopsis: >-
   Libraries demonstrating design patterns for programming and proving
