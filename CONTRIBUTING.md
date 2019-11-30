@@ -56,7 +56,7 @@ a new maintainer.
 To replace a maintainer,
 [open a new issue using the appropriate template][change_maintainer].
 
-Templates for setting up CI, an OPAM file, etc., [are available](templates/)
+Templates for setting up CI, an OPAM file, etc., [are available](template-examples/)
 and advice and guidelines on how to maintain a project may be found in the
 [wiki](https://github.com/coq-community/manifesto/wiki).
 
