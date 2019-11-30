@@ -3,6 +3,7 @@ fullname: AAC Tactics
 shortname: aac-tactics
 organization: coq-community
 community: true
+travis: true
 
 synopsis: >-
   This Coq plugin provides tactics for rewriting universally quantified

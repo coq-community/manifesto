@@ -3,6 +3,7 @@ fullname: Chapar
 shortname: chapar
 organization: coq-community
 community: true
+travis: true
 
 synopsis: >-
   A framework for verification of causal consistency for distributed key-value stores

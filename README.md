@@ -121,7 +121,7 @@ and pierre.casteran@labri.fr.
   <https://github.com/coq-community/manifesto/wiki/Continuous-Integration-with-Nix>
   and in <https://github.com/coq-community/docker-coq/wiki/CI-setup>. Feel
   free to use whichever you prefer (the proposed setup in
-  [`templates/`](templates/) uses a combination of both).
+  [`template-examples/`](template-examples/) uses a combination of both).
 
 - **Which versions of Coq must be supported by projects of coq-community?**
 
