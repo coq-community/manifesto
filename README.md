@@ -20,7 +20,7 @@ Please [get involved](CONTRIBUTING.md)!
 
 ### Collaborative maintenance of Coq packages and tools ###
 
-Projects can be hosted in coq-community in one of the following case:
+Projects can be hosted in coq-community whenever any of the following is the case:
 
 - the initial author has stopped maintaining the project and someone else is
   volunteering to do so;
