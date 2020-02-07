@@ -1,3 +1,0 @@
-[submodule "template-examples/templates"]
-	path = template-examples/templates
-	url = https://github.com/coq-community/templates

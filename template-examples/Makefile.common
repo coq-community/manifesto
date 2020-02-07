@@ -1,7 +1,0 @@
-TEMPLATES ?= ../templates
-
-%.opam: meta.yml $(TEMPLATES)/coq.opam.mustache
-	mustache $^ > $@
-
-%: meta.yml $(TEMPLATES)/%.mustache
-	mustache $^ > $@

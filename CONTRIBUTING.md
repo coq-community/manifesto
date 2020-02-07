@@ -56,7 +56,7 @@ a new maintainer.
 To replace a maintainer,
 [open a new issue using the appropriate template][change_maintainer].
 
-Templates for setting up CI, an OPAM file, etc., [are available](template-examples/)
+Templates for setting up CI, an OPAM file, etc., [are available][templates]
 and advice and guidelines on how to maintain a project may be found in the
 [wiki](https://github.com/coq-community/manifesto/wiki).
 
@@ -72,5 +72,7 @@ your contribution under the CC0 license: see [`LICENSE.md`](LICENSE.md).
 [move_project]: https://github.com/coq-community/manifesto/issues/new?template=move_project.md
 [change_maintainer]: https://github.com/coq-community/manifesto/issues/new?template=change_maintainer.md
 [meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
+
+[templates]: https://github.com/coq-community/templates
 
 [help-wanted]: https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3Acoq-community+label%3A%22help+wanted%22

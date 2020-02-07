@@ -120,8 +120,8 @@ and pierre.casteran@labri.fr.
   Two alternative ways of setting up CI are documented in
   <https://github.com/coq-community/manifesto/wiki/Continuous-Integration-with-Nix>
   and in <https://github.com/coq-community/docker-coq/wiki/CI-setup>. Feel
-  free to use whichever you prefer (the proposed setup in
-  [`template-examples/`](template-examples/) uses a combination of both).
+  free to use whichever you prefer. Templates for CI and other Coq-related
+  configuration files are maintained in the [templates][templates] repository.
 
 - **Which versions of Coq must be supported by projects of coq-community?**
 
@@ -193,3 +193,5 @@ Is anything still unclear? Please [open an issue][meta] or
 [meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
 
 [openlogos]: https://github.com/arasatasaygin/openlogos
+
+[templates]: https://github.com/coq-community/templates
