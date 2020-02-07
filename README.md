@@ -20,7 +20,7 @@ Please [get involved](CONTRIBUTING.md)!
 
 ### Collaborative maintenance of Coq packages and tools ###
 
-Projects can be hosted in coq-community in one of the following case:
+Projects can be hosted in coq-community whenever any of the following is the case:
 
 - the initial author has stopped maintaining the project and someone else is
   volunteering to do so;
@@ -71,7 +71,7 @@ their usefulness as a library or plugin, because they demonstrate interesting
 proof techniques, or because they represent an important achievement.
 
 This work will be done by an editorial board which will be constituted of
-experimented users and prominent members of the Coq community. They will have
+experienced users and prominent members of the Coq community. They will have
 to decide what packages to put forward and on what criteria to take these
 decisions. The editorial board will also oversee the collaborative writing of
 documentation.
