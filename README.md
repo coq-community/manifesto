@@ -191,13 +191,11 @@ and pierre.casteran@labri.fr.
   Thanks to Aras and to the 94 people who voted for us to get this logo!
 
 Is anything still unclear? Please [open an issue][meta] or
-[go to our Gitter room][gitter] to ask a question.
+[chat on Zulip][zulip-link] to ask a question.
 
 [archive]: https://github.com/coq-community?utf8=%E2%9C%93&q=&type=archived
 
 [Coq-CI]: https://github.com/coq/coq/blob/master/dev/ci/README.md
-
-[gitter]: https://gitter.im/coq-community/Lobby
 
 [meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
 
