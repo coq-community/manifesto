@@ -6,7 +6,7 @@ upheld by all participants in any coq-community forum (GitHub, Zulip, etc.).
 
 **Be respectful and inclusive.** Please do not use overtly sexual language or
 imagery, and do not attack anyone based on any aspect of personal identity,
-including gender, sexuality, religion, ethnicity, race, employment status,
+including gender, sexuality, political views, religion, ethnicity, race, employment status,
 age or ability. Keep in mind that what you write in public forums is read by
 many people who don’t know you personally, so please refrain from making
 prejudiced, sexual or political jokes and comments – even ones that you might
