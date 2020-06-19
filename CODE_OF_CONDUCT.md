@@ -2,7 +2,7 @@
 
 coq-community members are committed to maintaining a welcoming, civil and
 constructive environment. We expect the following standards to be observed and
-upheld by all participants in any community forum (GitHub, Zulip, etc.).
+upheld by all participants in any coq-community forum (GitHub, Zulip, etc.).
 
 **Be respectful and inclusive.** Please do not use overtly sexual language or
 imagery, and do not attack anyone based on any aspect of personal identity,
