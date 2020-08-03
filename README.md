@@ -141,6 +141,27 @@ and pierre.casteran@labri.fr.
   patches from Coq developers when they introduce a breaking change (this is
   particularly recommended for plugins).
 
+- **What license to choose for a coq-community project?**
+
+  The only strict requirement is to use an [open source
+  license](https://opensource.org/licenses).  However, if you create a
+  new project or propose to transfer a project of which you are the
+  sole copyright owner, we strongly encourage you to (re)license your
+  project under one of the following two licenses:
+
+  - [MIT license](https://choosealicense.com/licenses/mit/): a very
+    permissive and popular open source license.  This is the best
+    choice if you want to maximize the reusability of your project.
+
+  - [MPL-2.0 license](https://choosealicense.com/licenses/mpl-2.0/): a
+    weak [copyleft](https://en.wikipedia.org/wiki/Copyleft) license.
+    You can use this license if you want to restrict the license under
+    which modified versions of your project may be distributed.  It
+    does not limit how larger works may depend on your project.  This
+    license should be preferred over the (historically more prevalent)
+    [LGPL-2.1 license](https://choosealicense.com/licenses/lgpl-2.1/)
+    because it is technically simpler to understand and abide by.
+
 - **How to remove a package?**
 
   When a package loses its interest because a newer, better alternative has
