@@ -69,9 +69,9 @@ some improvements, discuss some policies, etc.
 Opening a pull request on this meta-project implies that you accept to put
 your contribution under the CC0 license: see [`LICENSE.md`](LICENSE.md).
 
-[move_project]: https://github.com/coq-community/manifesto/issues/new?template=move_project.md
-[change_maintainer]: https://github.com/coq-community/manifesto/issues/new?template=change_maintainer.md
-[meta]: https://github.com/coq-community/manifesto/issues/new?template=meta.md
+[move_project]: https://github.com/coq-community/manifesto/issues/new?labels=move-project&template=1-move-a-project.md&title=Proposal+to+move+project+X+to+coq-community
+[change_maintainer]: https://github.com/coq-community/manifesto/issues/new?labels=change-maintainer&template=2-change-maintainer.md&title=Change+maintainer+of+project+X
+[meta]: https://github.com/coq-community/manifesto/issues/new?labels=meta&template=3-meta.md
 
 [templates]: https://github.com/coq-community/templates
 
