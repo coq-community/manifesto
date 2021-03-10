@@ -62,33 +62,48 @@ plugin or tool that has users.
 Some Coq proofs present a particular pedagogical interest because their
 statements are easy to understand, but they require some non-trivial
 mathematical tools and their mechanization illustrates interesting proof
-patterns, or demonstrate the use of specific libraries. They could be used as
+patterns, or demonstrate the use of specific libraries. They can be used as
 the basis for tutorials which explain the tricks and interesting parts.
-Gathering such packages and their documentation could give rise to a new,
-interactive “book” that would target advanced Coq learners.
 
-We will propose a format for the documentation packages based on a preliminary
-work by Pierre Castéran.
+coq-community hosts several such documentation projects. Among them,
+["Hydra Battles and cie"](https://github.com/coq-community/hydra-battles)
+gathers several entertaining maths formalizations, along with detailed
+documentation and some exercises. Your contributions are welcome!
 
 ### Advertising interesting packages ###
 
-Not all the packages that will be taken over will be of the same initial
+Not all the packages that are transferred to coq-community have the same initial
 quality. While this should not stop packages from being taken over, and new
 maintainers should strive to improve the package quality, some editorial work
-will be also required to put forward the most interesting packages, be it for
+is also required to put forward the most interesting packages, be it for
 their usefulness as a library or plugin, because they demonstrate interesting
 proof techniques, or because they represent an important achievement.
 
-This work will be done by an editorial board which will be constituted of
-experienced users and prominent members of the Coq community. They will have
-to decide what packages to put forward and on what criteria to take these
-decisions. The editorial board will also oversee the collaborative writing of
-documentation.
-
-If you are interested in joining this board, please let us know at theo@irif.fr
-and pierre.casteran@labri.fr.
+Come [chat with us][zulip-link] if you want to participate in this
+editorial work.
 
 ## FAQ ##
+
+### Contributing ###
+
+- **How can I contribute?**
+
+  We have a shared contributing guide, see [CONTRIBUTING.md](CONTRIBUTING.md).
+  Some specific projects may have additional contributing guidelines.
+
+- **How to propose a new package?**
+
+  This process is documented [here](https://github.com/coq-community/manifesto/blob/master/CONTRIBUTING.md#proposing-a-new-package).
+
+- **Can I propose a project of which I am the author?**
+
+  Yes, you can propose a project of which you are the author, as a way of
+  preparing to pass on the maintenance to other community members. You can
+  start up by proposing yourself as the primary maintainer for this project;
+  but if you become less available for this task, we'll be able to pass on this
+  role to someone else.
+
+### Position in the Coq ecosystem ###
 
 - **What is the difference with coq-contribs?**
 
@@ -96,11 +111,11 @@ and pierre.casteran@labri.fr.
   maintenance model. There used to be a form allowing users to submit a package
   that the Coq development team would then maintain. While distribution now
   happens through the Coq package index and compatibility testing using
-  [Coq's CI][Coq-CI], maintenance of legacy contribs is still ensured.
+  [Coq's CI][Coq-CI], maintenance of legacy contribs is done less regularly.
 
   coq-community is a proposed replacement for the long-term maintenance of
   Coq packages. Whereas contribs were maintained by the Coq development team,
-  coq-community will be managed by the user community. We encourage users to
+  coq-community is managed by the user community. We encourage users to
   “adopt” a package (including a legacy contrib) and to push the meaning of
   “maintenance” further than simply ensuring that the package continues to
   compile with newer Coq versions.
@@ -111,13 +126,7 @@ and pierre.casteran@labri.fr.
   opam-based way of distributing Coq packages. As such, all packages of
   coq-community are meant to be listed in the Coq package index.
 
-- **Can I propose a project of which I am the author?**
-
-  Yes, you can propose a project of which you are the author, as a way of
-  preparing to pass on the maintenance to other community members. You can
-  start up by proposing yourself as the primary maintainer for this project;
-  but if you become less available for this task, we'll be able to pass on this
-  role to someone else.
+### Best practices ###
 
 - **Do the projects of coq-community need to have some Continous Integration (CI) setup?**
 
@@ -126,11 +135,8 @@ and pierre.casteran@labri.fr.
   compatible with the various versions of Coq that are claimed to be supported
   (as well as various versions of OCaml in the case of a Coq plugin).
 
-  Two alternative ways of setting up CI are documented in
-  <https://github.com/coq-community/manifesto/wiki/Continuous-Integration-with-Nix>
-  and in <https://github.com/coq-community/docker-coq/wiki/CI-setup>. Feel
-  free to use whichever you prefer. Templates for CI and other Coq-related
-  configuration files are maintained in the [templates][templates] repository.
+  Templates for CI and other Coq-related configuration files are
+  maintained in the [templates][templates] repository.
 
 - **Which versions of Coq must be supported by projects of coq-community?**
 
@@ -162,12 +168,15 @@ and pierre.casteran@labri.fr.
     [LGPL-2.1 license](https://choosealicense.com/licenses/lgpl-2.1/)
     because it is technically simpler to understand and abide by.
 
+### Process / organizational aspects ###
+
 - **How to remove a package?**
 
   When a package loses its interest because a newer, better alternative has
   been found, or for some other reason, the package can be marked as deprecated
   and stop being maintained. We will generally [archive][archive] the
-  repository rather than removing it completely though.
+  repository rather than removing it completely though. It also happens that
+  we archive a repository because its content has been merged in another one.
 
 - **What kind of permissions do the members have?**
 
@@ -185,7 +194,7 @@ and pierre.casteran@labri.fr.
   there should be exactly three (active) owners of the organization.
   The current owners are Karl Palmskog
   ([**@palmskog**](https://github.com/palmskog)), Anton Trunov
-  ([**anton-trunov**](https://github.com/anton-trunov)), and Théo
+  ([**@anton-trunov**](https://github.com/anton-trunov)), and Théo
   Zimmermann ([**@Zimmi48**](https://github.com/Zimmi48)).
 
 - **What to do in case of conflicts?**
@@ -194,6 +203,8 @@ and pierre.casteran@labri.fr.
   that are bound to arise about the management of specific projects. Please
   contribute to [meta-issue #2](https://github.com/coq-community/manifesto/issues/2)
   which is about this.
+
+### History ###
 
 - **Why this name?**
 
