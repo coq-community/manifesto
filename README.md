@@ -84,6 +84,27 @@ editorial work.
 
 ## FAQ ##
 
+### Contributing ###
+
+- **How can I contribute?**
+
+  We have a shared contributing guide, see [CONTRIBUTING.md](CONTRIBUTING.md).
+  Some specific projects may have additional contributing guidelines.
+
+- **How to propose a new package?**
+
+  This process is documented [here](https://github.com/coq-community/manifesto/blob/master/CONTRIBUTING.md#proposing-a-new-package).
+
+- **Can I propose a project of which I am the author?**
+
+  Yes, you can propose a project of which you are the author, as a way of
+  preparing to pass on the maintenance to other community members. You can
+  start up by proposing yourself as the primary maintainer for this project;
+  but if you become less available for this task, we'll be able to pass on this
+  role to someone else.
+
+### Position in the Coq ecosystem ###
+
 - **What is the difference with coq-contribs?**
 
   Coq's *contribs* represent the legacy distribution, compatibility testing and
@@ -105,13 +126,7 @@ editorial work.
   opam-based way of distributing Coq packages. As such, all packages of
   coq-community are meant to be listed in the Coq package index.
 
-- **Can I propose a project of which I am the author?**
-
-  Yes, you can propose a project of which you are the author, as a way of
-  preparing to pass on the maintenance to other community members. You can
-  start up by proposing yourself as the primary maintainer for this project;
-  but if you become less available for this task, we'll be able to pass on this
-  role to someone else.
+### Best practices ###
 
 - **Do the projects of coq-community need to have some Continous Integration (CI) setup?**
 
@@ -153,6 +168,8 @@ editorial work.
     [LGPL-2.1 license](https://choosealicense.com/licenses/lgpl-2.1/)
     because it is technically simpler to understand and abide by.
 
+### Process / organizational aspects ###
+
 - **How to remove a package?**
 
   When a package loses its interest because a newer, better alternative has
@@ -186,6 +203,8 @@ editorial work.
   that are bound to arise about the management of specific projects. Please
   contribute to [meta-issue #2](https://github.com/coq-community/manifesto/issues/2)
   which is about this.
+
+### History ###
 
 - **Why this name?**
 
