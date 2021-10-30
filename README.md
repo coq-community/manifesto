@@ -43,7 +43,7 @@ Projects can be hosted in coq-community whenever any of the following is the cas
   collaboratively.
 
 Each project under the umbrella of coq-community has one or several official
-maintainer(s) but the maintenance effort is done collaboratively. Users need
+maintainer(s), but the maintenance effort is done collaboratively. Users need
 not be afraid of volunteering to be the official maintainer of a coq-community
 project because they can step down at anytime. Changing the maintainer of a
 coq-community project can be done very easily without the hassle of moving its
