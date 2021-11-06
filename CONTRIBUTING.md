@@ -12,8 +12,10 @@ collaboratively improved. Please contribute!*
 Fill in the requested information. In particular here are some requirements to
 move a project to coq-community:
 
-- The project must have an open source license (non-commercial / academic
-  licenses are not acceptable).
+- The project must have a license that is either
+  [approved as an open source license by the OSI][osi-approved-license]
+  or [considered a free software license by the FSF][fsf-free-software-license]
+  (non-commercial / academic licenses are not acceptable).
 - The main authors of the package must either consent to this move or be
   completely unresponsive. Therefore, once a project is proposed, we will
   open an issue at the original project URL (or send an e-mail when this
@@ -70,7 +72,13 @@ Opening a pull request on this meta-project implies that you accept to put
 your contribution under the CC0 license: see [`LICENSE.md`](LICENSE.md).
 
 [move_project]: https://github.com/coq-community/manifesto/issues/new?labels=move-project&template=1-move-a-project.md&title=Proposal+to+move+project+X+to+coq-community
+
+[osi-approved-license]: https://opensource.org/licenses/alphabetical
+
+[fsf-free-software-license]: https://www.gnu.org/licenses/license-list.html
+
 [change_maintainer]: https://github.com/coq-community/manifesto/issues/new?labels=change-maintainer&template=2-change-maintainer.md&title=Change+maintainer+of+project+X
+
 [meta]: https://github.com/coq-community/manifesto/issues/new?labels=meta&template=3-meta.md
 
 [templates]: https://github.com/coq-community/templates
