@@ -13,8 +13,8 @@ Fill in the requested information. In particular here are some requirements to
 move a project to coq-community:
 
 - The project must have a license that is either
-  [approved as an open source license by the OSI][osi-approved-license]
-  or [considered a free software license by the FSF][fsf-free-software-license]
+  [approved as an open source license by OSI][osi-approved-license]
+  or [considered a free software license by FSF][fsf-free-software-license]
   (non-commercial / academic licenses are not acceptable).
 - The main authors of the package must either consent to this move or be
   completely unresponsive. Therefore, once a project is proposed, we will
