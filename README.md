@@ -152,8 +152,7 @@ editorial work.
   The only strict requirement is to use a license that is either
   [approved as an open source license by OSI][osi-approved-license]
   or [considered a free software license by FSF][fsf-free-software-license].
-
-  If you create a new project or propose to transfer a project
+  However, if you create a new project or propose to transfer a project
   of which you are the sole copyright owner, we strongly encourage you
   to (re)license your project under one of the following two licenses:
 
