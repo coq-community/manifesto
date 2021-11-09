@@ -147,18 +147,18 @@ editorial work.
   patches from Coq developers when they introduce a breaking change (this is
   particularly recommended for plugins).
 
-- **What license to choose for a coq-community project?**
+- **What license to use for a coq-community project?**
 
-  The only strict requirement is to use an [open source
-  license](https://opensource.org/licenses).  However, if you create a
-  new project or propose to transfer a project of which you are the
-  sole copyright owner, we strongly encourage you to (re)license your
-  project under one of the following two licenses:
+  The only strict requirement is to use a license that is either
+  [approved as an open source license by OSI][osi-approved-license]
+  or [considered a free software license by FSF][fsf-free-software-license].
+  However, if you create a new project or propose to transfer a project
+  of which you are the sole copyright owner, we strongly encourage you
+  to (re)license your project under one of the following two licenses:
 
   - [MIT license](https://choosealicense.com/licenses/mit/): a very
     permissive and popular open source license.  This is the best
     choice if you want to maximize the reusability of your project.
-
   - [MPL-2.0 license](https://choosealicense.com/licenses/mpl-2.0/): a
     weak [copyleft](https://en.wikipedia.org/wiki/Copyleft) license.
     You can use this license if you want to restrict the license under
@@ -167,6 +167,10 @@ editorial work.
     license should be preferred over the (historically more prevalent)
     [LGPL-2.1 license](https://choosealicense.com/licenses/lgpl-2.1/)
     because it is technically simpler to understand and abide by.
+
+  If neither of these two licenses can be used, we encourage using
+  another license that is both approved as an open source license
+  by OSI and considered a free software license by FSF.
 
 ### Process / organizational aspects ###
 
@@ -224,6 +228,10 @@ editorial work.
 
 Is anything still unclear? Please [open an issue][meta] or
 [chat on Zulip][zulip-link] to ask a question.
+
+[osi-approved-license]: https://opensource.org/licenses/alphabetical
+
+[fsf-free-software-license]: https://www.gnu.org/licenses/license-list.html
 
 [archive]: https://github.com/coq-community?utf8=%E2%9C%93&q=&type=archived
 
