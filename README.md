@@ -150,9 +150,8 @@ editorial work.
 - **What license to use for a coq-community project?**
 
   The only strict requirement is to use a license that is either
-
-  - [approved as an open source license by OSI][osi-approved-license], or
-  - [considered a free software license by FSF][fsf-free-software-license].
+  [approved as an open source license by OSI][osi-approved-license]
+  or [considered a free software license by FSF][fsf-free-software-license].
 
   If you create a new project or propose to transfer a project
   of which you are the sole copyright owner, we strongly encourage you
@@ -171,7 +170,8 @@ editorial work.
     because it is technically simpler to understand and abide by.
 
   If neither of these two licenses can be used, we encourage using
-  another open source license approved by the OSI.
+  another license that is both approved as an open source license
+  by OSI and considered a free software license by FSF.
 
 ### Process / organizational aspects ###
 
