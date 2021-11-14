@@ -66,9 +66,9 @@ patterns, or demonstrate the use of specific libraries. They can be used as
 the basis for tutorials which explain the tricks and interesting parts.
 
 coq-community hosts several such documentation projects. Among them,
-["Hydra Battles and cie"](https://github.com/coq-community/hydra-battles)
-gathers several entertaining maths formalizations, along with detailed
-documentation and some exercises. Your contributions are welcome!
+[Hydras & Co.](https://github.com/coq-community/hydra-battles)
+collects libraries of formalized mathematics for inspiration and entertainment,
+including detailed documentation and exercises. Your contributions are welcome!
 
 ### Advertising interesting packages ###
 
