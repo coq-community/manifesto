@@ -79,6 +79,9 @@ is also required to put forward the most interesting packages, be it for
 their usefulness as a library or plugin, because they demonstrate interesting
 proof techniques, or because they represent an important achievement.
 
+Currently, the [website](https://coq-community.org) highlights a selection of
+packages with ⭐ and warns about some others with ⚠️ to inform users
+that some packages are more recommended for reuse than others.
 Come [chat with us][zulip-link] if you want to participate in this
 editorial work.
 
