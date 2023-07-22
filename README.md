@@ -108,10 +108,10 @@ editorial work.
 
 ### Position in the Coq ecosystem ###
 
-- **What is the difference with coq-contribs?**
+- **What is the relation to coq-contribs?**
 
-  Coq's *contribs* represent the legacy distribution, compatibility testing and
-  maintenance model. There used to be a form allowing users to submit a package
+  Coq's [contribs][contribs] represent the legacy distribution, compatibility testing
+  and maintenance model. There used to be a form allowing users to submit a package
   that the Coq development team would then maintain. While distribution now
   happens through the Coq package index and compatibility testing using
   [Coq's CI][Coq-CI], maintenance of legacy contribs is done less regularly.
@@ -123,11 +123,24 @@ editorial work.
   “maintenance” further than simply ensuring that the package continues to
   compile with newer Coq versions.
 
-- **What is the relation with the Coq package index?**
+- **What is the relation to the Coq package index?**
 
   The [Coq package index](https://coq.inria.fr/packages) is the present
   opam-based way of distributing Coq packages. As such, all packages of
   coq-community are meant to be listed in the Coq package index.
+
+- **What is the relation to the Coq Platform?**
+
+  The [Coq Platform][platform] is a continuously developed distribution of
+  Coq together with a curated selection of generally useful packages. The
+  Platform is currently the officially recommended way to install Coq. To ensure
+  that packages are compatible with Coq over time, Platform package maintainers
+  must agree to a form of social contract that, e.g., entails making timely
+  releases as Coq evolves. While a [subset][coq-community-platform] of coq-community
+  packages are also part of the Coq Platform and thus conform to Platform rules,
+  coq-community packages are not necessarily generally useful or compatible with
+  the Platform. To the Coq Platform, coq-community is one organization among many
+  that host Platform packages.
 
 ### Best practices ###
 
@@ -245,3 +258,9 @@ Is anything still unclear? Please [open an issue][meta] or
 [openlogos]: https://github.com/arasatasaygin/openlogos
 
 [templates]: https://github.com/coq-community/templates
+
+[contribs]: https://github.com/coq-contribs
+
+[platform]: https://github.com/coq/platform
+
+[coq-community-platform]: https://github.com/search?q=topic%3Acoq-platform+org%3Acoq-community&type=Repositories
