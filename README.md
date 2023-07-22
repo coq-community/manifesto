@@ -108,13 +108,23 @@ editorial work.
 
 ### Position in the Coq ecosystem ###
 
+- **What is the relation to Coq's Continuous Integration (CI)?**
+
+  [Coq's CI][Coq-CI] systematically tests a collection of external libraries
+  and plugins for regression and compatiblity breakage with each proposed change to
+  Coq before integration. When a library or plugin in Coq's CI breaks, Coq developers
+  or contributors will send patches or give instructions how to adapt to the proposed
+  change. A [subset][coq-community-ci] of coq-community packages are included in
+  Coq's CI, and the process of fixing such packages that break is straightforward
+  since Coq developers can themselves integrate the required changes.
+
 - **What is the relation to coq-contribs?**
 
   Coq's [contribs][contribs] represent the legacy distribution, compatibility testing
   and maintenance model. There used to be a form allowing users to submit a package
   that the Coq development team would then maintain. While distribution now
-  happens through the Coq package index and compatibility testing using
-  [Coq's CI][Coq-CI], maintenance of legacy contribs is done less regularly.
+  happens through the Coq package index and compatibility testing is done via
+  Coq's CI, maintenance of legacy contribs is done less regularly.
 
   coq-community is a proposed replacement for the long-term maintenance of
   Coq packages. Whereas contribs were maintained by the Coq development team,
@@ -264,3 +274,5 @@ Is anything still unclear? Please [open an issue][meta] or
 [platform]: https://github.com/coq/platform
 
 [coq-community-platform]: https://github.com/search?q=topic%3Acoq-platform+org%3Acoq-community&type=Repositories
+
+[coq-community-ci]: https://github.com/search?q=topic%3Acoq-ci+org%3Acoq-community&type=Repositories
