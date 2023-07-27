@@ -118,6 +118,25 @@ editorial work.
   Coq's CI, and the process of fixing such packages that break is straightforward
   since Coq developers can themselves integrate the required changes.
 
+- **What is the relation to the Coq package index?**
+
+  The [Coq package index](https://coq.inria.fr/packages) is the present
+  way of distributing Coq packages using [opam][opam]. As such, all packages of
+  coq-community are meant to be listed in the Coq package index.
+
+- **What is the relation to the Coq Platform?**
+
+  The [Coq Platform][platform] is a continuously developed opam-based distribution of
+  Coq together with a curated selection of generally useful packages. The
+  Platform is currently the officially recommended way to install Coq. To ensure
+  that packages are compatible with Coq over time, Platform package maintainers
+  must agree to a form of social contract that, e.g., entails making timely
+  releases as Coq evolves. While a [subset][coq-community-platform] of coq-community
+  packages are also part of the Coq Platform and thus conform to Platform rules,
+  coq-community packages are not necessarily generally useful or compatible with
+  the Platform. To the Coq Platform, coq-community is one organization among many
+  that host Platform packages.
+
 - **What is the relation to coq-contribs?**
 
   Coq's [contribs][contribs] represent the legacy distribution, compatibility testing
@@ -132,25 +151,6 @@ editorial work.
   “adopt” a package (including a legacy contrib) and to push the meaning of
   “maintenance” further than simply ensuring that the package continues to
   compile with newer Coq versions.
-
-- **What is the relation to the Coq package index?**
-
-  The [Coq package index](https://coq.inria.fr/packages) is the present
-  opam-based way of distributing Coq packages. As such, all packages of
-  coq-community are meant to be listed in the Coq package index.
-
-- **What is the relation to the Coq Platform?**
-
-  The [Coq Platform][platform] is a continuously developed distribution of
-  Coq together with a curated selection of generally useful packages. The
-  Platform is currently the officially recommended way to install Coq. To ensure
-  that packages are compatible with Coq over time, Platform package maintainers
-  must agree to a form of social contract that, e.g., entails making timely
-  releases as Coq evolves. While a [subset][coq-community-platform] of coq-community
-  packages are also part of the Coq Platform and thus conform to Platform rules,
-  coq-community packages are not necessarily generally useful or compatible with
-  the Platform. To the Coq Platform, coq-community is one organization among many
-  that host Platform packages.
 
 ### Best practices ###
 
@@ -276,3 +276,5 @@ Is anything still unclear? Please [open an issue][meta] or
 [coq-community-platform]: https://github.com/search?q=topic%3Acoq-platform+org%3Acoq-community&type=Repositories
 
 [coq-community-ci]: https://github.com/search?q=topic%3Acoq-ci+org%3Acoq-community&type=Repositories
+
+[opam]: https://opam.ocaml.org
