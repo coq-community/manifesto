@@ -223,8 +223,8 @@ editorial work.
   process](CONTRIBUTING.md#proposing-a-new-package).  At all times,
   there should be exactly three (active) owners of the organization.
   The current owners are Karl Palmskog
-  ([**@palmskog**](https://github.com/palmskog)), Anton Trunov
-  ([**@anton-trunov**](https://github.com/anton-trunov)), and Théo
+  ([**@palmskog**](https://github.com/palmskog)), Pierre Roux
+  ([**@proux01**](https://github.com/proux01)), and Théo
   Zimmermann ([**@Zimmi48**](https://github.com/Zimmi48)).
 
 - **What to do in case of conflicts?**
